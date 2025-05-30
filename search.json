@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Hiten’s Website",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites. Hi I am Hiten Ladkani, I have been a professional cricketer for more than 12 years and still continue to passionately play the sport although not professionally anymore. I am also currently trying to learn a lot of other sports like Tennis and Baseball. Apart from this I have been actively learning data analytics after working in an advertising agency for 3 years and love analytics. Will edit the rest later"
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites. Hi I am Hiten Ladkani, I have been a professional cricketer for more than 12 years and still continue to passionately play the sport although not professionally anymore. I am also currently trying to learn a lot of other sports like Tennis and Baseball. Apart from this I have been actively learning data analytics after working in an advertising agency for 3 years and love analytics. Will edit the rest later\n\nx = 1\ny = 2\nz = x + y\nprint(\"The sum of\", x, \"and\", y, \"is\", z)\n\nThe sum of 1 and 2 is 3"
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,12 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "introduction.html",
+    "href": "introduction.html",
+    "title": "Hiten's Portfolio",
+    "section": "",
+    "text": "x = 1\ny = 2\nz = x + y\nprint(\"The sum of\", x, \"and\", y, \"is\", z)\n\nThe sum of 1 and 2 is 3"
   }
 ]
