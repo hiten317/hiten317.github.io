@@ -9,7 +9,7 @@
   {
     "objectID": "introduction.html",
     "href": "introduction.html",
-    "title": "Hiten's Portfolio",
+    "title": "Hiten Ladkani - Data Analyst Portfolio",
     "section": "",
     "text": "x = 1\ny = 2\nz = x + y\nprint(\"The sum of\", x, \"and\", y, \"is\", z)\n\nThe sum of 1 and 2 is 3"
   },
