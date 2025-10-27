@@ -2,22 +2,66 @@ project:
   type: website
 
 website:
-  title: "Hiten Ladkani - Data Analyst Portfolio"
-  description: "Showcasing analytics projects that solve real-world Marketing & Healthcare problems."
-  site-url: "https://hiten317.github.io/"
-  repo-url: https://github.com/hiten317?tab=repositories
+  title: "Hiten Ladkani - Portfolio"
+  description: "Data Analytics Portfolio"
   navbar:
-    background: primary
+    background: dark
     left:
-      - about.qmd
-      - projects.qmd
-      - resume.qmd
-      - contact.qmd
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: projects.qmd
+        text: Projects
+      - href: resume.qmd
+        text: Resume
+      - href: contact.qmd
+        text: Contact
+    right:
+      - icon: github
+        href: https://github.com/hiten317
+      - icon: linkedin
+        href: https://linkedin.com/in/hiten-ladkani
+      - icon: chart-bar  # Tableau icon
+        href: https://public.tableau.com/app/profile/hiten.ladkani/vizzes
 
 format:
   html:
-    theme: flatly
-    css: custom.css
+    theme: darkly
 
-
-
+include-in-header:
+  - text: |
+      <style>
+        /* GLOBAL STYLES ONLY - Applied to all pages */
+        .navbar-dark {
+          background-color: #1e3a8a !important;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+          color: white !important;
+        }
+        .navbar-dark .navbar-nav .nav-link:hover {
+          color: #bfdbfe !important;
+        }
+        body {
+          background-color: #0f172a;
+          color: #e2e8f0;
+        }
+        a {
+          color: #60a5fa;
+        }
+        a:hover {
+          color: #93c5fd;
+        }
+        .nav-pills .nav-link.active {
+          background-color: #1e3a8a !important;
+          border-color: #1e3a8a !important;
+        }
+        .nav-pills .nav-link {
+          color: #60a5fa !important;
+        }
+        
+        /* Custom Tableau icon styling if needed */
+        .fa-chart-bar::before {
+          content: "📊";
+        }
+      </style>

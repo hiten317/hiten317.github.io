@@ -176,3 +176,4 @@ cython_debug/
 /.quarto/
 *.tar.gz
 **/*.quarto_ipynb
+.assets

@@ -7,5 +7,14 @@
   },
   "introduction.ipynb": {
     "introduction.html": "11cc8df1"
+  },
+  "projects.qmd": {
+    "projects.html": "a3ee000f"
+  },
+  "resume.qmd": {
+    "resume.html": "f923c848"
+  },
+  "contact.qmd": {
+    "contact.html": "3df316ac"
   }
 }

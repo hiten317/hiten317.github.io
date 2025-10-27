@@ -1,0 +1,190 @@
+---
+title: "Resume"
+format:
+  html:
+    theme: darkly
+    css: |
+      /* Resume specific styling */
+      .resume-container {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      
+      .download-section {
+        text-align: center;
+        margin: 2rem 0;
+        padding: 1.5rem;
+        background: #1e293b;
+        border-radius: 8px;
+        border: 1px solid #334155;
+      }
+      
+      .download-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #1e3a8a;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+      
+      .download-btn:hover {
+        background: #1d4ed8;
+        transform: translateY(-2px);
+        color: white;
+        text-decoration: none;
+      }
+      
+      .resume-content {
+        background: #1e293b;
+        padding: 2rem;
+        border-radius: 8px;
+        border: 1px solid #334155;
+      }
+      
+      .resume-section {
+        margin-bottom: 2rem;
+      }
+      
+      .resume-section h2 {
+        color: #60a5fa;
+        border-bottom: 2px solid #1e3a8a;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+      }
+      
+      .job-item, .education-item {
+        margin-bottom: 1.5rem;
+      }
+      
+      .job-title {
+        font-weight: bold;
+        color: #e2e8f0;
+        font-size: 1.1em;
+      }
+      
+      .company, .school {
+        color: #93c5fd;
+        font-style: italic;
+      }
+      
+      .date {
+        color: #cbd5e1;
+        font-size: 0.9em;
+      }
+      
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+      
+      .skill-category {
+        background: #0f172a;
+        padding: 1rem;
+        border-radius: 6px;
+        border-left: 4px solid #1e3a8a;
+      }
+---
+
+# Professional Resume
+
+<div class="download-section">
+### 📄 Download Resume
+[Download PDF Version](resume_files/Hiten Ladkani Resume_Analyst.pdf){.download-btn}
+</div>
+
+<div class="resume-content">
+
+## Professional Summary {.resume-section}
+
+Data Analyst with 3+ years of experience transforming complex data into actionable insights. Specialized in predictive modeling, data visualization, and business intelligence. Proven track record of driving data-informed decisions that improved operational efficiency by 25%.
+
+---
+
+## Work Experience {.resume-section}
+
+<div class="job-item">
+**<span class="job-title">Data Analyst</span>**  
+<span class="company">Tech Solutions Inc.</span>  
+<span class="date">Jan 2023 - Present</span>
+
+- Developed predictive models that reduced customer churn by 18%
+- Created interactive Tableau dashboards used by 50+ stakeholders
+- Automated data processing pipelines, saving 15 hours weekly
+- Conducted A/B testing that increased conversion rates by 12%
+</div>
+
+<div class="job-item">
+**<span class="job-title">Junior Data Analyst</span>**  
+<span class="company">Data Insights Corp.</span>  
+<span class="date">Jun 2021 - Dec 2022</span>
+
+- Analyzed marketing campaign data across multiple channels
+- Built SQL queries for customer segmentation and targeting
+- Created monthly performance reports for executive team
+- Collaborated with cross-functional teams on data projects
+</div>
+
+---
+
+## Education {.resume-section}
+
+<div class="education-item">
+**<span class="job-title">Bachelor of Science in Data Science</span>**  
+<span class="school">University of Technology</span>  
+<span class="date">Graduated: May 2021 | GPA: 3.8/4.0</span>
+
+*Relevant Coursework: Machine Learning, Statistical Analysis, Database Systems, Data Visualization*
+</div>
+
+---
+
+## Technical Skills {.resume-section}
+
+<div class="skills-grid">
+
+<div class="skill-category">
+**Programming**  
+Python, R, SQL, JavaScript
+</div>
+
+<div class="skill-category">
+**Data Visualization**  
+Tableau, Power BI, Matplotlib, Plotly
+</div>
+
+<div class="skill-category">
+**Machine Learning**  
+Scikit-learn, TensorFlow, Predictive Modeling
+</div>
+
+<div class="skill-category">
+**Tools & Platforms**  
+AWS, Git, Docker, Jupyter, Excel
+</div>
+
+</div>
+
+---
+
+## Certifications {.resume-section}
+
+- **Google Data Analytics Professional Certificate** - Google (2023)
+- **AWS Certified Cloud Practitioner** - Amazon Web Services (2022)
+- **Tableau Desktop Specialist** - Tableau (2022)
+
+---
+
+## Projects {.resume-section}
+
+- **Customer Segmentation Analysis**: Clustered 50K+ customers using K-means
+- **Sales Forecasting Model**: Achieved 94% accuracy in quarterly predictions
+- **Real-time Dashboard**: Built interactive dashboard monitoring key metrics
+
+</div>

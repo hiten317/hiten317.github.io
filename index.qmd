@@ -1,17 +1,159 @@
 ---
-title: "Hiten's Website"
+title: " "
+format:
+  html:
+    theme: none
+    toc: false
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-Hi I am Hiten Ladkani, I have been a professional cricketer for more than 12 years and still continue to passionately play the sport
-although not professionally anymore. I am also currently trying to learn a lot of other sports like Tennis and Baseball. Apart from this
-I have been actively learning data analytics after working in an advertising agency for 3 years and love analytics. Will edit the rest later
-
-```{python}
-x = 1
-y = 2
-z = x + y
-print("The sum of", x, "and", y, "is", z)
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiten Ladkani - Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+        
+        .portfolio-hero {
+            text-align: center;
+            max-width: 800px;
+            padding: 2rem;
+        }
+        
+        .name {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .title {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            color: #cccccc;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+        
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+            color: #999999;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+        
+        .buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+        
+        .btn {
+            padding: 15px 35px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(102, 126, 234, 0.1);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .name {
+                font-size: 2.5rem;
+            }
+            .title {
+                font-size: 1.2rem;
+            }
+            .description {
+                font-size: 1rem;
+            }
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .btn {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="portfolio-hero">
+        <h1 class="name">Hiten Ladkani</h1>
+        <h2 class="title">Welcome to my Data Analytics Portfolio</h2>
+        
+        <p class="description">
+            Showcasing how I transform complex data into actionable insights in Marketing 
+           & Healthcare Analytics via data storytelling.
+        </p>
+        
+        <div class="buttons">
+            <a href="about.html" class="btn btn-primary">About Me</a>
+            <a href="projects.html" class="btn btn-secondary">View Projects</a>
+            <a href="resume.html" class="btn btn-secondary">Resume</a>
+        </div>
+    </div>
+</body>
+</html>
 ```

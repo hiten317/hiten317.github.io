@@ -1,0 +1,84 @@
+---
+title: "Resume"
+format:
+  html:
+    theme: darkly
+include-in-header:
+  - text: |
+      <style>
+        /* Resume specific styling */
+        .resume-container {
+          max-width: 900px;
+          margin: 0 auto;
+        }
+        .download-section {
+          text-align: center;
+          margin: 2rem 0;
+          padding: 1.5rem;
+          background: #1e293b;
+          border-radius: 8px;
+          border: 1px solid #334155;
+        }
+        .download-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: #1e3a8a;
+          color: white;
+          padding: 0.75rem 1.5rem;
+          text-decoration: none;
+          border-radius: 6px;
+          font-weight: 600;
+          transition: all 0.3s ease;
+        }
+        .download-btn:hover {
+          background: #1d4ed8;
+          transform: translateY(-2px);
+          color: white;
+          text-decoration: none;
+        }
+        .resume-content {
+          background: #1e293b;
+          padding: 2rem;
+          border-radius: 8px;
+          border: 1px solid #334155;
+        }
+        .resume-section {
+          margin-bottom: 2rem;
+        }
+        .resume-section h2 {
+          color: #60a5fa;
+          border-bottom: 2px solid #1e3a8a;
+          padding-bottom: 0.5rem;
+          margin-bottom: 1rem;
+        }
+        .job-item, .education-item {
+          margin-bottom: 1.5rem;
+        }
+        .job-title {
+          font-weight: bold;
+          color: #e2e8f0;
+          font-size: 1.1em;
+        }
+        .company, .school {
+          color: #93c5fd;
+          font-style: italic;
+        }
+        .date {
+          color: #cbd5e1;
+          font-size: 0.9em;
+        }
+        .skills-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 1rem;
+          margin-top: 1rem;
+        }
+        .skill-category {
+          background: #0f172a;
+          padding: 1rem;
+          border-radius: 6px;
+          border-left: 4px solid #1e3a8a;
+        }
+      </style>
+---

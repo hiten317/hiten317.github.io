@@ -1,0 +1,8 @@
+---
+title: "Projects"
+format:
+  html:
+    theme: darkly
+    toc: true
+    toc-depth: 2
+---

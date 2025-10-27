@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – Hiten Ladkani - Data Analyst Portfolio</title>
+<title>About – Hiten Ladkani - Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f53e39e793a795b7f5460a9c839ad7b2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-376c3c0ee52b1cbffa9252b7b7025e10.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,9 +68,85 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>
+  /* GLOBAL STYLES ONLY - Applied to all pages */
+  .navbar-dark {
+    background-color: #1e3a8a !important;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: white !important;
+  }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #bfdbfe !important;
+  }
+  body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+  }
+  a {
+    color: #60a5fa;
+  }
+  a:hover {
+    color: #93c5fd;
+  }
+  .nav-pills .nav-link.active {
+    background-color: #1e3a8a !important;
+    border-color: #1e3a8a !important;
+  }
+  .nav-pills .nav-link {
+    color: #60a5fa !important;
+  }
+  
+  /* Custom Tableau icon styling if needed */
+  .fa-chart-bar::before {
+    content: "📊";
+  }
+</style>
+<style>
+  /* About page specific styling */
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+  .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #334155;
+  }
+  .profile-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  .social-links {
+    margin: 1.5rem 0;
+  }
+  .social-links a {
+    margin-right: 1rem;
+    text-decoration: none;
+  }
+  .content-section {
+    margin-bottom: 3rem;
+  }
+  .content-section h2 {
+    border-bottom: 2px solid #1e3a8a;
+    padding-bottom: 0.5rem;
+    color: #60a5fa;
+    margin-bottom: 1.5rem;
+  }
+  @media (max-width: 768px) {
+    .profile-header {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>
 
 
-<link rel="stylesheet" href="custom.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -83,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Hiten Ladkani - Data Analyst Portfolio</span>
+    <span class="navbar-title">Hiten Ladkani - Portfolio</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -93,23 +169,41 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link active" href="./about.html" aria-current="page"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <span class="nav-link">
-<span class="menu-text">projects.qmd</span>
-    </span>
+    <a class="nav-link" href="./projects.html"> 
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <span class="nav-link">
-<span class="menu-text">resume.qmd</span>
-    </span>
+    <a class="nav-link" href="./resume.html"> 
+<span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <span class="nav-link">
-<span class="menu-text">contact.qmd</span>
-    </span>
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/hiten317"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://linkedin.com/in/hiten-ladkani"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://public.tableau.com/app/profile/hiten.ladkani/vizzes"> <i class="bi bi-chart-bar" role="img">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -145,9 +239,70 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>About this site</p>
+<div class="profile-header">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/images/profile.jpg" class="profile-img img-fluid figure-img"></p>
+<figcaption>Your Profile Picture</figcaption>
+</figure>
+</div>
+<section id="your-name" class="level1 profile-text">
+<h1>Your Name</h1>
+<section id="data-analyst-analytics-professional" class="level3">
+<h3 class="anchored" data-anchor-id="data-analyst-analytics-professional">Data Analyst | Analytics Professional</h3>
+<div class="social-links">
+<p><a href="https://github.com/yourusername"><img src="https://img.shields.io/badge/GitHub-181717?logo=github.png" class="img-fluid" alt="GitHub"></a> <a href="https://linkedin.com/in/yourprofile"><img src="https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin.png" class="img-fluid" alt="LinkedIn"></a> <a href="https://public.tableau.com/app/profile/yourprofile"><img src="https://img.shields.io/badge/Tableau-E97627?logo=tableau.png" class="img-fluid" alt="Tableau"></a> <a href="mailto:your.email@domain.com"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail.png" class="img-fluid" alt="Email"></a></p>
+</div>
+</section>
+</section>
+</div>
+<section id="professional-journey" class="level2 content-section">
+<h2 class="content-section anchored" data-anchor-id="professional-journey">Professional Journey</h2>
+<p>[Your professional story here…]</p>
+<p><em>Started my journey in data analytics when…</em> <em>Currently focused on…</em> <em>Passionate about…</em></p>
+</section>
+<section id="skills-expertise" class="level2 content-section">
+<h2 class="content-section anchored" data-anchor-id="skills-expertise">Skills &amp; Expertise</h2>
+<section id="technical-skills" class="level3">
+<h3 class="anchored" data-anchor-id="technical-skills">Technical Skills</h3>
+<ul>
+<li><strong>Programming</strong>: Python, R, SQL</li>
+<li><strong>Data Visualization</strong>: Tableau, Power BI, Matplotlib, Plotly</li>
+<li><strong>Machine Learning</strong>: Scikit-learn, Predictive Modeling</li>
+<li><strong>Tools</strong>: Git, Docker, AWS, Jupyter Notebooks</li>
+</ul>
+</section>
+<section id="domain-expertise" class="level3">
+<h3 class="anchored" data-anchor-id="domain-expertise">Domain Expertise</h3>
+<ul>
+<li>Marketing Analytics</li>
+<li>Healthcare Analytics<br>
+</li>
+<li>Business Intelligence</li>
+<li>Data Storytelling</li>
+</ul>
+</section>
+</section>
+<section id="education-certifications" class="level2 content-section">
+<h2 class="content-section anchored" data-anchor-id="education-certifications">Education &amp; Certifications</h2>
+<ul>
+<li><strong>Bachelor of Science in Data Science</strong> - University Name (Year)</li>
+<li><strong>Google Data Analytics Professional Certificate</strong> - Google (Year)</li>
+<li><strong>AWS Cloud Practitioner</strong> - Amazon Web Services (Year)</li>
+</ul>
+</section>
+<section id="currently-learning" class="level2 content-section">
+<h2 class="content-section anchored" data-anchor-id="currently-learning">Currently Learning</h2>
+<ul>
+<li>Advanced Machine Learning techniques</li>
+<li>Cloud data engineering</li>
+<li>Real-time analytics platforms</li>
+</ul>
+<hr>
+<p><em>“Your favorite data-related quote or personal philosophy”</em></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -223,7 +378,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/hiten317\.github\.io\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
