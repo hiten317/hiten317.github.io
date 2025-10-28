@@ -2,37 +2,37 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Me",
     "section": "",
-    "text": "Your Profile Picture"
+    "text": "Data Analyst | Marketing Analytics Professional"
   },
   {
     "objectID": "about.html#professional-journey",
     "href": "about.html#professional-journey",
-    "title": "About",
+    "title": "About Me",
     "section": "Professional Journey",
     "text": "Professional Journey\n[Your professional story here…]\nStarted my journey in data analytics when… Currently focused on… Passionate about…"
   },
   {
     "objectID": "about.html#skills-expertise",
     "href": "about.html#skills-expertise",
-    "title": "About",
+    "title": "About Me",
     "section": "Skills & Expertise",
-    "text": "Skills & Expertise\n\nTechnical Skills\n\nProgramming: Python, R, SQL\nData Visualization: Tableau, Power BI, Matplotlib, Plotly\nMachine Learning: Scikit-learn, Predictive Modeling\nTools: Git, Docker, AWS, Jupyter Notebooks\n\n\n\nDomain Expertise\n\nMarketing Analytics\nHealthcare Analytics\n\nBusiness Intelligence\nData Storytelling"
+    "text": "Skills & Expertise\n\nTechnical Skills\n\nProgramming: Python, R\nDatabase: MySQL, PostgreSQL\nData Visualization: Tableau, Power BI, Excel, Datorama\nMachine Learning: Scikit-learn, Predictive Modeling, Regression algorithms, Forecasting models, Classification algorithms and Forecasting models\nCloud systems: Git, AWS, Spark (SparkSQL, PySpark)\nStatistics: Hypothesis testing, Chi-square test, T-tests, probability distributions\nMarketing Analytics: GA4 (Google Analytics), A/B testing, Media Mix Modeling (MMM), Market Research, Audience segmentation, Google Tag Manager (GTM), paid media strategy, Marketing measurement frameworks.\n\n\n\nDomain Expertise\n\nMarketing Analytics\nHealthcare Analytics\n\nBusiness Intelligence\nData Storytelling"
   },
   {
     "objectID": "about.html#education-certifications",
     "href": "about.html#education-certifications",
-    "title": "About",
+    "title": "About Me",
     "section": "Education & Certifications",
     "text": "Education & Certifications\n\nBachelor of Science in Data Science - University Name (Year)\nGoogle Data Analytics Professional Certificate - Google (Year)\nAWS Cloud Practitioner - Amazon Web Services (Year)"
   },
   {
     "objectID": "about.html#currently-learning",
     "href": "about.html#currently-learning",
-    "title": "About",
+    "title": "About Me",
     "section": "Currently Learning",
-    "text": "Currently Learning\n\nAdvanced Machine Learning techniques\nCloud data engineering\nReal-time analytics platforms\n\n\n“Your favorite data-related quote or personal philosophy”"
+    "text": "Currently Learning\n\nAdvanced Regression algorithms for Marketing Analytics\nCore basics of Marketing Mix Modeling\nAttribution and Incrementality testing & how to built these measurmenet frameworks for Marketing Analytics\n\n\n“Your favorite data-related quote or personal philosophy”"
   },
   {
     "objectID": "resume.html",
@@ -82,5 +82,40 @@
     "title": "Resume",
     "section": "",
     "text": "Customer Segmentation Analysis: Clustered 50K+ customers using K-means\nSales Forecasting Model: Achieved 94% accuracy in quarterly predictions\nReal-time Dashboard: Built interactive dashboard monitoring key metrics"
+  },
+  {
+    "objectID": "test-about.html",
+    "href": "test-about.html",
+    "title": "Test About",
+    "section": "",
+    "text": "Image Test\n\n\n\nIf you see a blue circle, the image loaded. If you see broken image icon, the URL is wrong."
+  },
+  {
+    "objectID": "about.html#professional-journey-professional-journey-.content-section",
+    "href": "about.html#professional-journey-professional-journey-.content-section",
+    "title": "About Me",
+    "section": "Professional Journey {#professional-journey .content-section",
+    "text": "Professional Journey {#professional-journey .content-section\n[Your professional story here…]\nStarted my journey in data analytics when… Currently focused on… Passionate about…"
+  },
+  {
+    "objectID": "about.html#skills-expertise-skills-expertise",
+    "href": "about.html#skills-expertise-skills-expertise",
+    "title": "About Me",
+    "section": "Skills & Expertise {#skills-expertise",
+    "text": "Skills & Expertise {#skills-expertise\n\nTechnical Skills\n\nProgramming: Python, R\nDatabase: MySQL, PostgreSQL\nData Visualization: Tableau, Power BI, Excel, Datorama\nMachine Learning: Scikit-learn, Predictive Modeling, Regression algorithms, Forecasting models, Classification algorithms and Forecasting models\nCloud systems: Git, AWS, Spark (SparkSQL, PySpark)\nStatistics: Hypothesis testing, Chi-square test, T-tests, probability distributions\nMarketing Analytics: GA4 (Google Analytics), A/B testing, Media Mix Modeling (MMM), Market Research, Audience segmentation, Google Tag Manager (GTM), paid media strategy, Marketing measurement frameworks.\n\n\n\nDomain Expertise\n\nMarketing Analytics\nHealthcare Analytics\n\nBusiness Intelligence\nData Storytelling"
+  },
+  {
+    "objectID": "about.html#education-certifications-education-certifications-n",
+    "href": "about.html#education-certifications-education-certifications-n",
+    "title": "About Me",
+    "section": "Education & Certifications {#education-certifications n}",
+    "text": "Education & Certifications {#education-certifications n}\n\nBachelor of Science in Data Science - University Name (Year)\nGoogle Data Analytics Professional Certificate - Google (Year)\nAWS Cloud Practitioner - Amazon Web Services (Year)"
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About Me",
+    "section": "Skills",
+    "text": "Skills\n\nTechnical Skills\n\nProgramming: Python, R\nDatabase: MySQL, PostgreSQL\nData Visualization: Tableau, Power BI, Excel, Datorama\nMachine Learning: Scikit-learn, Predictive Modeling, Regression algorithms, Forecasting models, Classification algorithms and Forecasting models\nCloud systems: Git, AWS, Spark (SparkSQL, PySpark)\nStatistics: Hypothesis testing, Chi-square test, T-tests, probability distributions\nMarketing Analytics: GA4 (Google Analytics), A/B testing, Media Mix Modeling (MMM), Market Research, Audience segmentation, Google Tag Manager (GTM), paid media strategy, Marketing measurement frameworks.\n\n###Domain Expertise - Marketing Analytics - Healthcare Analytics\n- Business Intelligence - Data Storytelling\n##Education & Certifications {#education-certifications}\n\nBachelor of Science in Data Science - University Name (Year)\nGoogle Data Analytics Professional Certificate - Google (Year)\nAWS Cloud Practitioner - Amazon Web Services (Year)\n\n##Currently Learning {#currently-learning}\n\nAdvanced Machine Learning techniques\nCloud data engineering\nReal-time analytics platforms\n\n\n“Your favorite data-related quote or personal philosophy”"
   }
 ]
