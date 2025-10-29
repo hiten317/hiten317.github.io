@@ -1,23 +1,86 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Hiten’s Website",
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites. Hi I am Hiten Ladkani, I have been a professional cricketer for more than 12 years and still continue to passionately play the sport although not professionally anymore. I am also currently trying to learn a lot of other sports like Tennis and Baseball. Apart from this I have been actively learning data analytics after working in an advertising agency for 3 years and love analytics. Will edit the rest later\n\nx = 1\ny = 2\nz = x + y\nprint(\"The sum of\", x, \"and\", y, \"is\", z)\n\nThe sum of 1 and 2 is 3"
+    "text": "Download PDF Version\n\n\n\n\nData Analyst with 3+ years of experience transforming complex data into actionable insights. Specialized in predictive modeling, data visualization, and business intelligence. Proven track record of driving data-informed decisions that improved operational efficiency by 25%.\n\n\n\n\n\nData Analyst\nTech Solutions Inc.\nJan 2023 - Present\n\nDeveloped predictive models that reduced customer churn by 18%\nCreated interactive Tableau dashboards used by 50+ stakeholders\nAutomated data processing pipelines, saving 15 hours weekly\nConducted A/B testing that increased conversion rates by 12%\n\n\n\nJunior Data Analyst\nData Insights Corp.\nJun 2021 - Dec 2022\n\nAnalyzed marketing campaign data across multiple channels\nBuilt SQL queries for customer segmentation and targeting\nCreated monthly performance reports for executive team\nCollaborated with cross-functional teams on data projects\n\n\n\n\n\n\n\nBachelor of Science in Data Science\nUniversity of Technology\nGraduated: May 2021 | GPA: 3.8/4.0\nRelevant Coursework: Machine Learning, Statistical Analysis, Database Systems, Data Visualization\n\n\n\n\n\n\n\nProgramming\nPython, R, SQL, JavaScript\n\n\nData Visualization\nTableau, Power BI, Matplotlib, Plotly\n\n\nMachine Learning\nScikit-learn, TensorFlow, Predictive Modeling\n\n\nTools & Platforms\nAWS, Git, Docker, Jupyter, Excel\n\n\n\n\n\n\n\nGoogle Data Analytics Professional Certificate - Google (2023)\nAWS Certified Cloud Practitioner - Amazon Web Services (2022)\nTableau Desktop Specialist - Tableau (2022)\n\n\n\n\n\n\nCustomer Segmentation Analysis: Clustered 50K+ customers using K-means\nSales Forecasting Model: Achieved 94% accuracy in quarterly predictions\nReal-time Dashboard: Built interactive dashboard monitoring key metrics"
+  },
+  {
+    "objectID": "resume.html#professional-summary",
+    "href": "resume.html#professional-summary",
+    "title": "Resume",
+    "section": "",
+    "text": "Data Analyst with 3+ years of experience transforming complex data into actionable insights. Specialized in predictive modeling, data visualization, and business intelligence. Proven track record of driving data-informed decisions that improved operational efficiency by 25%."
+  },
+  {
+    "objectID": "resume.html#work-experience",
+    "href": "resume.html#work-experience",
+    "title": "Resume",
+    "section": "",
+    "text": "Data Analyst\nTech Solutions Inc.\nJan 2023 - Present\n\nDeveloped predictive models that reduced customer churn by 18%\nCreated interactive Tableau dashboards used by 50+ stakeholders\nAutomated data processing pipelines, saving 15 hours weekly\nConducted A/B testing that increased conversion rates by 12%\n\n\n\nJunior Data Analyst\nData Insights Corp.\nJun 2021 - Dec 2022\n\nAnalyzed marketing campaign data across multiple channels\nBuilt SQL queries for customer segmentation and targeting\nCreated monthly performance reports for executive team\nCollaborated with cross-functional teams on data projects"
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Resume",
+    "section": "",
+    "text": "Bachelor of Science in Data Science\nUniversity of Technology\nGraduated: May 2021 | GPA: 3.8/4.0\nRelevant Coursework: Machine Learning, Statistical Analysis, Database Systems, Data Visualization"
+  },
+  {
+    "objectID": "resume.html#technical-skills",
+    "href": "resume.html#technical-skills",
+    "title": "Resume",
+    "section": "",
+    "text": "Programming\nPython, R, SQL, JavaScript\n\n\nData Visualization\nTableau, Power BI, Matplotlib, Plotly\n\n\nMachine Learning\nScikit-learn, TensorFlow, Predictive Modeling\n\n\nTools & Platforms\nAWS, Git, Docker, Jupyter, Excel"
+  },
+  {
+    "objectID": "resume.html#certifications",
+    "href": "resume.html#certifications",
+    "title": "Resume",
+    "section": "",
+    "text": "Google Data Analytics Professional Certificate - Google (2023)\nAWS Certified Cloud Practitioner - Amazon Web Services (2022)\nTableau Desktop Specialist - Tableau (2022)"
+  },
+  {
+    "objectID": "resume.html#projects",
+    "href": "resume.html#projects",
+    "title": "Resume",
+    "section": "",
+    "text": "Customer Segmentation Analysis: Clustered 50K+ customers using K-means\nSales Forecasting Model: Achieved 94% accuracy in quarterly predictions\nReal-time Dashboard: Built interactive dashboard monitoring key metrics"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Me",
     "section": "",
-    "text": "About this site"
+    "text": "Data Analyst | Marketing Analytics Professional"
   },
   {
-    "objectID": "introduction.html",
-    "href": "introduction.html",
-    "title": "Hiten's Portfolio",
-    "section": "",
-    "text": "x = 1\ny = 2\nz = x + y\nprint(\"The sum of\", x, \"and\", y, \"is\", z)\n\nThe sum of 1 and 2 is 3"
+    "objectID": "about.html#professional-journey",
+    "href": "about.html#professional-journey",
+    "title": "About Me",
+    "section": "Professional Journey",
+    "text": "Professional Journey\nMy inspiration for pursuing Analytics stemmed from my previous role as a Media Planner, I had opportunity with our Marketing Science team to work on a geo-lift experiment for a client and I was able to analyze the historical data and identify the control cities as well as test group and once the experiment was successful, I was given the opportunity to present and that moment made me realize this comes naturally to me and I want to pursue this. I was promoted to Media Planning Manager and requested to have analytic responsibilities as well. From there on, I felt the industry was constantly evolving and I need to keep up with it so I decided to pursue Masters in Business Analytics at Boston University.\nAfter completing the course, I feel like I have a better understanding of the full marketing execution workflow all the way upto analysis of campaign performance and reporting. Most importantly I am not afraid to challenge myself to learn new tools and techniques that can be used in Marketing Measurement frameworks. I have also had opportunity to work hands-on with healthcare data and there I am most interested in analyzing patient data for resource allocation, identifying trends/patterns of symptoms for a particular disease and even claims data to recommend ways of streamlining the process more efficiently. Over the period of last 1.5 years I have worked with classmates, teammembers on hackathons, professors on exploring advanced topics while preparing for job applications and what I have realized is that I have developed a practice of using AI to execute my logic and completely depend on my learning and understanding for figuring out how to solve business problems by using the data at hand. I have been constantly practicing converting business problems into analytic questions for the data so my query and code writing becomes easy.\nApart from practicing proficiency in usual analytical tools and techniques like Python, R, SQL and BI platforms like Power BI, Excel and Tableau, I am willing to learn tools that an organization requires, document processes and constantly work on improving my ability to communicate learnings from the data analysis in the most simple way so that coming to conclusions & business decisions is easier for stakeholders and decision makers."
+  },
+  {
+    "objectID": "about.html#skills-expertise",
+    "href": "about.html#skills-expertise",
+    "title": "About Me",
+    "section": "Skills & Expertise",
+    "text": "Skills & Expertise\n\nTechnical Skills\n\nProgramming: Python, R\nDatabase: MySQL, PostgreSQL\nData Visualization: Tableau, Power BI, Excel, Datorama\nMachine Learning: Scikit-learn, Predictive Modeling, Regression algorithms, Forecasting models, Classification algorithms and Forecasting models\nCloud systems: Git, AWS, Spark (SparkSQL, PySpark)\nStatistics: Hypothesis testing, Chi-square test, T-tests, probability distributions\nMarketing Analytics: GA4 (Google Analytics), A/B testing, Media Mix Modeling (MMM), Market Research, Audience segmentation, Google Tag Manager (GTM), paid media strategy, Marketing measurement frameworks.\n\n\n\nDomain Expertise\n\nMarketing Analytics\nHealthcare Analytics\n\nBusiness Intelligence\nData Storytelling"
+  },
+  {
+    "objectID": "about.html#education-certifications",
+    "href": "about.html#education-certifications",
+    "title": "About Me",
+    "section": "Education & Certifications",
+    "text": "Education & Certifications\n\nMasters of Science in Business Analytics - Boston University (2025)\nPostgraduate certificate in Brand Management - Seneca College of Arts & Science (2022)\nGoogle Data Analytics Professional Certificate - Google (2023)\nAWS Cloud Practitioner - Amazon Web Services (2025)\nMeta Certified Marketing Science Professional - Meta Blueprint (2025) Ongoing"
+  },
+  {
+    "objectID": "about.html#currently-learning",
+    "href": "about.html#currently-learning",
+    "title": "About Me",
+    "section": "Currently Learning",
+    "text": "Currently Learning\n\nAdvanced Regression algorithms for Marketing Analytics.\nCore basics of Marketing Mix Modeling.\nAttribution and Incrementality testing & how to built these measurmenet frameworks for Marketing Analytics.\nUnderstanding pipelines and their design principles so I can make life easy for Marketing reporting teams.\n\n\n“Marketing without data analysis & research for a brand is like hoping to drive business results by random trials & opinions”"
   }
 ]
