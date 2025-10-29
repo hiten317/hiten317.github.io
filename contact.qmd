@@ -1,84 +1,335 @@
 ---
-title: "Resume"
+title: "Contact form"
 format:
   html:
     theme: darkly
-include-in-header:
-  - text: |
-      <style>
-        /* Resume specific styling */
-        .resume-container {
-          max-width: 900px;
-          margin: 0 auto;
-        }
-        .download-section {
-          text-align: center;
-          margin: 2rem 0;
-          padding: 1.5rem;
-          background: #1e293b;
-          border-radius: 8px;
-          border: 1px solid #334155;
-        }
-        .download-btn {
-          display: inline-flex;
-          align-items: center;
-          gap: 0.5rem;
-          background: #1e3a8a;
-          color: white;
-          padding: 0.75rem 1.5rem;
-          text-decoration: none;
-          border-radius: 6px;
-          font-weight: 600;
-          transition: all 0.3s ease;
-        }
-        .download-btn:hover {
-          background: #1d4ed8;
-          transform: translateY(-2px);
-          color: white;
-          text-decoration: none;
-        }
-        .resume-content {
-          background: #1e293b;
-          padding: 2rem;
-          border-radius: 8px;
-          border: 1px solid #334155;
-        }
-        .resume-section {
-          margin-bottom: 2rem;
-        }
-        .resume-section h2 {
-          color: #60a5fa;
-          border-bottom: 2px solid #1e3a8a;
-          padding-bottom: 0.5rem;
-          margin-bottom: 1rem;
-        }
-        .job-item, .education-item {
-          margin-bottom: 1.5rem;
-        }
-        .job-title {
-          font-weight: bold;
-          color: #e2e8f0;
-          font-size: 1.1em;
-        }
-        .company, .school {
-          color: #93c5fd;
-          font-style: italic;
-        }
-        .date {
-          color: #cbd5e1;
-          font-size: 0.9em;
-        }
-        .skills-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-          gap: 1rem;
-          margin-top: 1rem;
-        }
-        .skill-category {
-          background: #0f172a;
-          padding: 1rem;
-          border-radius: 6px;
-          border-left: 4px solid #1e3a8a;
-        }
-      </style>
+    toc: false
 ---
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 2rem 0;
+}
+
+.contact-form {
+  background: #2d3748;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #4a5568;
+}
+
+.contact-info {
+  background: #2d3748;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #4a5568;
+  text-align: center;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #60a5fa;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.name-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #cbd5e0;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #4a5568;
+  border-radius: 5px;
+  background: #1a202c;
+  color: white;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: #60a5fa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #3b82f6;
+}
+
+.contact-details {
+  margin-top: 2rem;
+}
+
+.contact-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #1a202c;
+  border-radius: 10px;
+  border-left: 4px solid #60a5fa;
+}
+
+.contact-item strong {
+  color: #60a5fa;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.social-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.social-icon:hover::before {
+  left: 100%;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 10px 20px rgba(96, 165, 250, 0.3);
+}
+
+.email-icon {
+  background: #ea4335;
+}
+
+.linkedin-icon {
+  background: #0077b5;
+}
+
+.github-icon {
+  background: #333;
+}
+
+.social-icon i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.icon-label {
+  margin-top: 0.5rem;
+  color: #cbd5e0;
+  font-size: 0.9rem;
+}
+
+.social-item {
+  text-align: center;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.social-icon {
+  animation: float 3s ease-in-out infinite;
+}
+
+.social-icon:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.social-icon:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.social-icon:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .name-fields {
+    grid-template-columns: 1fr;
+  }
+  
+  .social-links {
+    gap: 1rem;
+  }
+  
+  .social-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+</style>
+
+```{=html}
+<div class="contact-header">
+  <h1>CONTACT ME</h1>
+</div>
+
+<div class="contact-container">
+  <div class="contact-form">
+      <form action="https://formspree.io/f/xzzkggzj" method="POST">
+      <div class="name-fields">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Type your message here...</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+    
+  <script>
+    document.querySelector('form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const submitBtn = this.querySelector('.submit-btn');
+      const originalText = submitBtn.textContent;
+      
+      // Show loading state
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+      
+      try {
+        const response = await fetch(this.action, {
+          method: 'POST',
+          body: new FormData(this),
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        
+        if (response.ok) {
+          submitBtn.textContent = 'Message Sent!';
+          submitBtn.style.background = '#10b981';
+          this.reset();
+          setTimeout(() => {
+            submitBtn.textContent = originalText;
+            submitBtn.style.background = '';
+            submitBtn.disabled = false;
+          }, 3000);
+        } else {
+          throw new Error('Failed to send');
+        }
+      } catch (error) {
+        submitBtn.textContent = 'Error - Try Again';
+        submitBtn.style.background = '#ef4444';
+        setTimeout(() => {
+          submitBtn.textContent = originalText;
+          submitBtn.style.background = '';
+          submitBtn.disabled = false;
+        }, 3000);
+      }
+    });
+    </script>
+  </div>
+  
+  <div class="contact-info">
+    <div class="contact-item">
+      <strong>Hiten Ladkani</strong>
+      Data Analyst | Marketing Analytics Professional
+    </div>
+    
+    <div class="social-links">
+      <div class="social-item">
+        <a href="mailto:hiten317@bu.edu" class="social-icon email-icon">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <div class="icon-label">Email</div>
+      </div>
+      
+      <div class="social-item">
+        <a href="https://linkedin.com/in/hiten-ladkani" target="_blank" class="social-icon linkedin-icon">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <div class="icon-label">LinkedIn</div>
+      </div>
+      
+      <div class="social-item">
+        <a href="https://github.com/hiten317" target="_blank" class="social-icon github-icon">
+          <i class="fab fa-github"></i>
+        </a>
+        <div class="icon-label">GitHub</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Add click animations
+document.querySelectorAll('.social-icon').forEach(icon => {
+  icon.addEventListener('click', function(e) {
+    this.style.transform = 'scale(0.9)';
+    setTimeout(() => {
+      this.style.transform = '';
+    }, 300);
+  });
+});
+</script>
+```

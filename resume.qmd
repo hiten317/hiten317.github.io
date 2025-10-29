@@ -1,98 +1,175 @@
 ---
-title: "Resume"
+title: "Professional Resume"
 format:
   html:
     theme: darkly
-    css: |
-      /* Resume specific styling */
-      .resume-container {
-        max-width: 900px;
-        margin: 0 auto;
-      }
-      
-      .download-section {
-        text-align: center;
-        margin: 2rem 0;
-        padding: 1.5rem;
-        background: #1e293b;
-        border-radius: 8px;
-        border: 1px solid #334155;
-      }
-      
-      .download-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        background: #1e3a8a;
-        color: white;
-        padding: 0.75rem 1.5rem;
-        text-decoration: none;
-        border-radius: 6px;
-        font-weight: 600;
-        transition: all 0.3s ease;
-      }
-      
-      .download-btn:hover {
-        background: #1d4ed8;
-        transform: translateY(-2px);
-        color: white;
-        text-decoration: none;
-      }
-      
-      .resume-content {
-        background: #1e293b;
-        padding: 2rem;
-        border-radius: 8px;
-        border: 1px solid #334155;
-      }
-      
-      .resume-section {
-        margin-bottom: 2rem;
-      }
-      
-      .resume-section h2 {
-        color: #60a5fa;
-        border-bottom: 2px solid #1e3a8a;
-        padding-bottom: 0.5rem;
-        margin-bottom: 1rem;
-      }
-      
-      .job-item, .education-item {
-        margin-bottom: 1.5rem;
-      }
-      
-      .job-title {
-        font-weight: bold;
-        color: #e2e8f0;
-        font-size: 1.1em;
-      }
-      
-      .company, .school {
-        color: #93c5fd;
-        font-style: italic;
-      }
-      
-      .date {
-        color: #cbd5e1;
-        font-size: 0.9em;
-      }
-      
-      .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1rem;
-        margin-top: 1rem;
-      }
-      
-      .skill-category {
-        background: #0f172a;
-        padding: 1rem;
-        border-radius: 6px;
-        border-left: 4px solid #1e3a8a;
-      }
+    toc: true
+    toc-location: right
 ---
 
-# Professional Resume
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+```{=html}
+<style>
+/* Resume specific styling */
+.resume-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.download-section {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #1e293b;
+  border-radius: 8px;
+  border: 1px solid #334155;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #1e3a8a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  color: white;
+  text-decoration: none;
+}
+
+.resume-content {
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+}
+
+.resume-section {
+  margin-bottom: 2rem;
+}
+
+.resume-section h2 {
+  color: #60a5fa;
+  border-bottom: 2px solid #1e3a8a;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.job-item, .education-item {
+  margin-bottom: 1.5rem;
+}
+
+.job-title {
+  font-weight: bold;
+  color: #e2e8f0;
+  font-size: 1.1em;
+}
+
+.company, .school {
+  color: #93c5fd;
+  font-style: italic;
+}
+
+.date {
+  color: #cbd5e1;
+  font-size: 0.9em;
+}
+
+/* Animated Tools Stack */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.tool-item {
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #334155;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tool-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(96, 165, 250, 0.1), transparent);
+  transition: left 0.6s;
+}
+
+.tool-item:hover::before {
+  left: 100%;
+}
+
+.tool-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(96, 165, 250, 0.2);
+  border-color: #60a5fa;
+}
+
+.tool-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.tool-item:hover .tool-icon {
+  transform: scale(1.2);
+}
+
+.tool-name {
+  color: #e2e8f0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+.tool-item {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Stagger animations */
+.tool-item:nth-child(2) { animation-delay: 0.2s; }
+.tool-item:nth-child(3) { animation-delay: 0.4s; }
+.tool-item:nth-child(4) { animation-delay: 0.6s; }
+.tool-item:nth-child(5) { animation-delay: 0.8s; }
+.tool-item:nth-child(6) { animation-delay: 1s; }
+.tool-item:nth-child(7) { animation-delay: 1.2s; }
+.tool-item:nth-child(8) { animation-delay: 1.4s; }
+.tool-item:nth-child(9) { animation-delay: 1.6s; }
+.tool-item:nth-child(10) { animation-delay: 1.8s; }
+.tool-item:nth-child(11) { animation-delay: 2s; }
+.tool-item:nth-child(12) { animation-delay: 2.2s; }
+.tool-item:nth-child(13) { animation-delay: 2.4s; }
+.tool-item:nth-child(14) { animation-delay: 2.6s; }
+.tool-item:nth-child(15) { animation-delay: 2.8s; }
+.tool-item:nth-child(16) { animation-delay: 3s; }
+.tool-item:nth-child(17) { animation-delay: 3.2s; }
+</style>
+```
 
 <div class="download-section">
 ### 📄 Download Resume
@@ -101,39 +178,52 @@ format:
 
 <div class="resume-content">
 
-## Professional Summary {.resume-section}
+## Professional Summary 
 
-Data Analyst with 3+ years of experience transforming complex data into actionable insights. Specialized in predictive modeling, data visualization, and business intelligence. Proven track record of driving data-informed decisions that improved operational efficiency by 25%.
+*Paid media planner and analyst with over 2 years of experience in planning omni-channel media plans for clients across automotive,
+entertainment and insurance verticals. I have closely worked with Marketing Science team to establish my foundation in Marketing Analytics and had hands-on experience in designing experiments to report on incremental metrics for digital campaigns. My biggest achievement in my previous role was identifying audience segments for an automotive clients campaign using historical data and 3rd party audience data and then test it on new platforms & combining with influencer marketing to create a wider impact. The campaign was awarded Twitch campaign of the year for esports category in 2022 and I had the opportunity to present the case study.* 
+
+*More recently I am working as Data Analyst at a non-profit and using data from various government sources to empower their event planning and fundraising strategy using tools like SQL, Python and Power BI.*
 
 ---
 
-## Work Experience {.resume-section}
+## Work Experience 
 
 <div class="job-item">
 **<span class="job-title">Data Analyst</span>**  
-<span class="company">Tech Solutions Inc.</span>  
-<span class="date">Jan 2023 - Present</span>
+<span class="company">Propa City Community Outreach</span>  
+<span class="date">June 2025 - Present</span>
 
-- Developed predictive models that reduced customer churn by 18%
-- Created interactive Tableau dashboards used by 50+ stakeholders
-- Automated data processing pipelines, saving 15 hours weekly
-- Conducted A/B testing that increased conversion rates by 12%
+- Engineered a PostgreSQL relational database to centralize 1,500+ programs and resources records, reducing query times by 40% and     improving data accessibility for monthly board reviews.
+- Automated Salesforce-to-database data ingestion using a Python ETL pipeline, reducing manual data collection and transfer time by 70%
+- Developed a Power BI dashboard tracking annual events and maternal health program KPIs, enabling comprehensive reporting to board members and reallocation of $50K funding to workshops.
+- Presented data-driven outreach insights during the Massachusetts PPD initiative, resulting in partnerships with 2 medical centres serving 3 neighborhoods.
 </div>
 
 <div class="job-item">
-**<span class="job-title">Junior Data Analyst</span>**  
-<span class="company">Data Insights Corp.</span>  
-<span class="date">Jun 2021 - Dec 2022</span>
+**<span class="job-title">Media Planning Manager</span>**  
+<span class="company">Omnicom Media Group</span>  
+<span class="date">Oct 2023 - Aug 2024</span>
 
-- Analyzed marketing campaign data across multiple channels
-- Built SQL queries for customer segmentation and targeting
-- Created monthly performance reports for executive team
-- Collaborated with cross-functional teams on data projects
+- Directed omni-channel planning for Cineplex Pan Canada using marketing mix modeling results, achieving a 20% YoY reach increase by reallocating 30% of Facebook budget to TikTok and CTV based on performance data
+- Led annual media planning for Cineplex’s Playdium and Recroom brand portfolios of $3M, using Data Management Platforms (DMPs) audience segments as well as Adobe 1P data to shift 100% of TV budget to Programmatic CTV, increasing YoY reach by 20%
+- Optimized Porsche’s Digital Plan by analyzing GA4 cross-channel attribution (paid social v/s display), reallocating 15% of Meta spend to high performing Twitch and Pinterest placements and combining it with Influencer boosted plan, winning ‘Twitch Esports Campaign of the year 2022.’
+- Collaborated with Marketing science team to build a Datorama dashboard tracking cross-channel performance (paid social, search, programmatic, CTV & OOH), integrated platform-specific metrics (Facebook CPM, YouTube CPV) into a unified view, enabling weekly recommendations and optimization reports to the client.
+- Led competitive analysis using industry and audience data from Telmar, Vividata, Nielsen and Environics through Omni, identifying Share of Voice (SOV) for Porsche’s luxury auto category.
+
+<div class="job-item">
+**<span class="job-title">Media Planning Associate</span>**  
+<span class="company">Omnicom Media Group</span>  
+<span class="date">May 2022 - Oct 2023</span>
 </div>
 
+- Managed end-to-end ad operations including campaign trafficking sheets, tag QA, and insertion orders across multiple channels, reducing errors by 20% through systematic process improvements and cross-checks with execution team
+- Assisted in QA checks for a Tableau dashboard (validating GA4 metrics vs. platform data) ensuring accuracy for bi-weekly client reporting presentations.
+- Partnered with Digital execution team to leverage Lotame and Nielsen audiences under Omni for refining Ferrero’s ecommerce campaigns, improving ROAS by 3.5x than the traditional search plan.
+- Pulled and compiled weekly platform reports (Google Ads, DV360, Meta Ads Manager) for senior planners, flagging underperforming campaigns for optimization.
 ---
 
-## Education {.resume-section}
+## Education 
 
 <div class="education-item">
 **<span class="job-title">Bachelor of Science in Data Science</span>**  
@@ -145,46 +235,80 @@ Data Analyst with 3+ years of experience transforming complex data into actionab
 
 ---
 
-## Technical Skills {.resume-section}
+## Technical Tools Stack
 
-<div class="skills-grid">
+```{=html}
+<div class="tools-grid">
+  <div class="tool-item">
+    <i class="fab fa-python tool-icon" style="color: #3776AB;"></i>
+    <p class="tool-name">Python</p>
+  </div>
+  <div class="tool-item">
+    <i class="fas fa-database tool-icon" style="color: #336791;"></i>
+    <p class="tool-name">SQL</p>
+  </div>
+  <div class="tool-item">
+    <i class="fas fa-database tool-icon" style="color: #336791;"></i>
+    <p class="tool-name">PostgreSQL</p>
+  </div>
+  <div class="tool-item">
+    <i class="fab fa-r-project tool-icon" style="color: #276DC3;"></i>
+    <p class="tool-name">R</p>
+  </div>
+  <div class="tool-item">
+    <i class="fas fa-bolt tool-icon" style="color: #E25A1C;"></i>
+    <p class="tool-name">Apache Spark</p>
+  </div>
+  <div class="tool-item">
+    <i class="fab fa-aws tool-icon" style="color: #FF9900;"></i>
+    <p class="tool-name">AWS EC2</p>
+  </div>
+  <div class="tool-item">
+    <i class="fab fa-aws tool-icon" style="color: #FF9900;"></i>
+    <p class="tool-name">AWS S3</p>
+  </div>
+  <div class="tool-item">
+    <i class="fas fa-code tool-icon" style="color: #007ACC;"></i>
+    <p class="tool-name">VS Code</p>
+  </div>
+  <div class="tool-item">
+    <i class="fas fa-book tool-icon" style="color: #F37626;"></i>
+    <p class="tool-name">Jupyter</p>
+  </div>
+  <div class="tool-item">
+    <i class="fab fa-google tool-icon" style="color: #4285F4;"></i>
+    <p class="tool-name">Google Colab</p>
+  </div>
+  <div class="tool-item">
+    <i class="fab fa-github tool-icon" style="color: #ffffff;"></i>
+    <p class="tool-name">GitHub</p>
+  </div>
+  <div class="tool-item">
+    <i class="fas fa-file-excel tool-icon" style="color: #217346;"></i>
+    <p class="tool-name">Excel</p>
+  </div>
+  <div class="tool-item">
+    <i class="fas fa-chart-bar tool-icon" style="color: #F2C811;"></i>
+    <p class="tool-name">Power BI</p>
+  </div>
+  <div class="tool-item">
+    <i class="fas fa-chart-pie tool-icon" style="color: #9768DF;"></i>
+    <p class="tool-name">Tableau</p>
+  </div>
+  <div class="tool-item">
+    <i class="fab fa-google tool-icon" style="color: #4285F4;"></i>
+    <p class="tool-name">Looker Studio</p>
+  </div>
+  <div class="tool-item">
+    <i class="fas fa-chart-line tool-icon" style="color: #F9AB00;"></i>
+    <p class="tool-name">Google Analytics</p>
+  </div>
+  <div class="tool-item">
+    <i class="fas fa-file-code tool-icon" style="color: #1976D2;"></i>
+    <p class="tool-name">Quarto</p>
+  </div>
+</div>
+```
 
-<div class="skill-category">
-**Programming**  
-Python, R, SQL, JavaScript
 </div>
 
-<div class="skill-category">
-**Data Visualization**  
-Tableau, Power BI, Matplotlib, Plotly
-</div>
-
-<div class="skill-category">
-**Machine Learning**  
-Scikit-learn, TensorFlow, Predictive Modeling
-</div>
-
-<div class="skill-category">
-**Tools & Platforms**  
-AWS, Git, Docker, Jupyter, Excel
-</div>
-
-</div>
-
----
-
-## Certifications {.resume-section}
-
-- **Google Data Analytics Professional Certificate** - Google (2023)
-- **AWS Certified Cloud Practitioner** - Amazon Web Services (2022)
-- **Tableau Desktop Specialist** - Tableau (2022)
-
----
-
-## Projects {.resume-section}
-
-- **Customer Segmentation Analysis**: Clustered 50K+ customers using K-means
-- **Sales Forecasting Model**: Achieved 94% accuracy in quarterly predictions
-- **Real-time Dashboard**: Built interactive dashboard monitoring key metrics
-
-</div>

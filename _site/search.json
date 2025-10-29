@@ -37,30 +37,30 @@
   {
     "objectID": "resume.html",
     "href": "resume.html",
-    "title": "Resume",
+    "title": "Professional Resume",
     "section": "",
-    "text": "Download PDF Version\n\n\n\n\nData Analyst with 3+ years of experience transforming complex data into actionable insights. Specialized in predictive modeling, data visualization, and business intelligence. Proven track record of driving data-informed decisions that improved operational efficiency by 25%.\n\n\n\n\n\nData Analyst\nTech Solutions Inc.\nJan 2023 - Present\n\nDeveloped predictive models that reduced customer churn by 18%\nCreated interactive Tableau dashboards used by 50+ stakeholders\nAutomated data processing pipelines, saving 15 hours weekly\nConducted A/B testing that increased conversion rates by 12%\n\n\n\nJunior Data Analyst\nData Insights Corp.\nJun 2021 - Dec 2022\n\nAnalyzed marketing campaign data across multiple channels\nBuilt SQL queries for customer segmentation and targeting\nCreated monthly performance reports for executive team\nCollaborated with cross-functional teams on data projects\n\n\n\n\n\n\n\nBachelor of Science in Data Science\nUniversity of Technology\nGraduated: May 2021 | GPA: 3.8/4.0\nRelevant Coursework: Machine Learning, Statistical Analysis, Database Systems, Data Visualization\n\n\n\n\n\n\n\nProgramming\nPython, R, SQL, JavaScript\n\n\nData Visualization\nTableau, Power BI, Matplotlib, Plotly\n\n\nMachine Learning\nScikit-learn, TensorFlow, Predictive Modeling\n\n\nTools & Platforms\nAWS, Git, Docker, Jupyter, Excel\n\n\n\n\n\n\n\nGoogle Data Analytics Professional Certificate - Google (2023)\nAWS Certified Cloud Practitioner - Amazon Web Services (2022)\nTableau Desktop Specialist - Tableau (2022)\n\n\n\n\n\n\nCustomer Segmentation Analysis: Clustered 50K+ customers using K-means\nSales Forecasting Model: Achieved 94% accuracy in quarterly predictions\nReal-time Dashboard: Built interactive dashboard monitoring key metrics"
+    "text": "Download PDF Version"
   },
   {
     "objectID": "resume.html#professional-summary",
     "href": "resume.html#professional-summary",
-    "title": "Resume",
-    "section": "",
-    "text": "Data Analyst with 3+ years of experience transforming complex data into actionable insights. Specialized in predictive modeling, data visualization, and business intelligence. Proven track record of driving data-informed decisions that improved operational efficiency by 25%."
+    "title": "Professional Resume",
+    "section": "Professional Summary",
+    "text": "Professional Summary\nPaid media planner and analyst with over 2 years of experience in planning omni-channel media plans for clients across automotive, entertainment and insurance verticals. I have closely worked with Marketing Science team to establish my foundation in Marketing Analytics and had hands-on experience in designing experiments to report on incremental metrics for digital campaigns. My biggest achievement in my previous role was identifying audience segments for an automotive clients campaign using historical data and 3rd party audience data and then test it on new platforms & combining with influencer marketing to create a wider impact. The campaign was awarded Twitch campaign of the year for esports category in 2022 and I had the opportunity to present the case study.\nMore recently I am working as Data Analyst at a non-profit and using data from various government sources to empower their event planning and fundraising strategy using tools like SQL, Python and Power BI."
   },
   {
     "objectID": "resume.html#work-experience",
     "href": "resume.html#work-experience",
-    "title": "Resume",
-    "section": "",
-    "text": "Data Analyst\nTech Solutions Inc.\nJan 2023 - Present\n\nDeveloped predictive models that reduced customer churn by 18%\nCreated interactive Tableau dashboards used by 50+ stakeholders\nAutomated data processing pipelines, saving 15 hours weekly\nConducted A/B testing that increased conversion rates by 12%\n\n\n\nJunior Data Analyst\nData Insights Corp.\nJun 2021 - Dec 2022\n\nAnalyzed marketing campaign data across multiple channels\nBuilt SQL queries for customer segmentation and targeting\nCreated monthly performance reports for executive team\nCollaborated with cross-functional teams on data projects"
+    "title": "Professional Resume",
+    "section": "Work Experience",
+    "text": "Work Experience\n\nData Analyst\nPropa City Community Outreach\nJune 2025 - Present\n\nEngineered a PostgreSQL relational database to centralize 1,500+ programs and resources records, reducing query times by 40% and improving data accessibility for monthly board reviews.\nAutomated Salesforce-to-database data ingestion using a Python ETL pipeline, reducing manual data collection and transfer time by 70%\nDeveloped a Power BI dashboard tracking annual events and maternal health program KPIs, enabling comprehensive reporting to board members and reallocation of $50K funding to workshops.\nPresented data-driven outreach insights during the Massachusetts PPD initiative, resulting in partnerships with 2 medical centres serving 3 neighborhoods.\n\n\n\nMedia Planning Manager\nOmnicom Media Group\nOct 2023 - Aug 2024\n\nDirected omni-channel planning for Cineplex Pan Canada using marketing mix modeling results, achieving a 20% YoY reach increase by reallocating 30% of Facebook budget to TikTok and CTV based on performance data\nLed annual media planning for Cineplex’s Playdium and Recroom brand portfolios of $3M, using Data Management Platforms (DMPs) audience segments as well as Adobe 1P data to shift 100% of TV budget to Programmatic CTV, increasing YoY reach by 20%\nOptimized Porsche’s Digital Plan by analyzing GA4 cross-channel attribution (paid social v/s display), reallocating 15% of Meta spend to high performing Twitch and Pinterest placements and combining it with Influencer boosted plan, winning ‘Twitch Esports Campaign of the year 2022.’\nCollaborated with Marketing science team to build a Datorama dashboard tracking cross-channel performance (paid social, search, programmatic, CTV & OOH), integrated platform-specific metrics (Facebook CPM, YouTube CPV) into a unified view, enabling weekly recommendations and optimization reports to the client.\nLed competitive analysis using industry and audience data from Telmar, Vividata, Nielsen and Environics through Omni, identifying Share of Voice (SOV) for Porsche’s luxury auto category.\n\n\nMedia Planning Associate\nOmnicom Media Group\nMay 2022 - Oct 2023\n\n\nManaged end-to-end ad operations including campaign trafficking sheets, tag QA, and insertion orders across multiple channels, reducing errors by 20% through systematic process improvements and cross-checks with execution team\nAssisted in QA checks for a Tableau dashboard (validating GA4 metrics vs. platform data) ensuring accuracy for bi-weekly client reporting presentations.\nPartnered with Digital execution team to leverage Lotame and Nielsen audiences under Omni for refining Ferrero’s ecommerce campaigns, improving ROAS by 3.5x than the traditional search plan.\nPulled and compiled weekly platform reports (Google Ads, DV360, Meta Ads Manager) for senior planners, flagging underperforming campaigns for optimization.\n\n\nEducation\n\nBachelor of Science in Data Science\nUniversity of Technology\nGraduated: May 2021 | GPA: 3.8/4.0\nRelevant Coursework: Machine Learning, Statistical Analysis, Database Systems, Data Visualization\n\n\n\n\nTechnical Tools Stack\n\n  \n    \n    Python\n  \n  \n    \n    SQL\n  \n  \n    \n    PostgreSQL\n  \n  \n    \n    R\n  \n  \n    \n    Apache Spark\n  \n  \n    \n    AWS EC2\n  \n  \n    \n    AWS S3\n  \n  \n    \n    VS Code\n  \n  \n    \n    Jupyter\n  \n  \n    \n    Google Colab\n  \n  \n    \n    GitHub\n  \n  \n    \n    Excel\n  \n  \n    \n    Power BI\n  \n  \n    \n    Tableau\n  \n  \n    \n    Looker Studio\n  \n  \n    \n    Google Analytics\n  \n  \n    \n    Quarto"
   },
   {
     "objectID": "resume.html#education",
     "href": "resume.html#education",
-    "title": "Resume",
-    "section": "",
-    "text": "Bachelor of Science in Data Science\nUniversity of Technology\nGraduated: May 2021 | GPA: 3.8/4.0\nRelevant Coursework: Machine Learning, Statistical Analysis, Database Systems, Data Visualization"
+    "title": "Professional Resume",
+    "section": "Education",
+    "text": "Education\n\nBachelor of Science in Data Science\nUniversity of Technology\nGraduated: May 2021 | GPA: 3.8/4.0\nRelevant Coursework: Machine Learning, Statistical Analysis, Database Systems, Data Visualization"
   },
   {
     "objectID": "resume.html#technical-skills",
@@ -74,7 +74,7 @@
     "href": "resume.html#certifications",
     "title": "Resume",
     "section": "",
-    "text": "Google Data Analytics Professional Certificate - Google (2023)\nAWS Certified Cloud Practitioner - Amazon Web Services (2022)\nTableau Desktop Specialist - Tableau (2022)"
+    "text": "Google Data Analytics Professional Certificate - Google (2023)\nAWS Certified Cloud Practitioner - Amazon Web Services (2022)\nTableau Desktop Specialist - Tableau (2022)\n\n–"
   },
   {
     "objectID": "resume.html#projects",
@@ -117,5 +117,19 @@
     "title": "About Me",
     "section": "Skills",
     "text": "Skills\n\nTechnical Skills\n\nProgramming: Python, R\nDatabase: MySQL, PostgreSQL\nData Visualization: Tableau, Power BI, Excel, Datorama\nMachine Learning: Scikit-learn, Predictive Modeling, Regression algorithms, Forecasting models, Classification algorithms and Forecasting models\nCloud systems: Git, AWS, Spark (SparkSQL, PySpark)\nStatistics: Hypothesis testing, Chi-square test, T-tests, probability distributions\nMarketing Analytics: GA4 (Google Analytics), A/B testing, Media Mix Modeling (MMM), Market Research, Audience segmentation, Google Tag Manager (GTM), paid media strategy, Marketing measurement frameworks.\n\n###Domain Expertise - Marketing Analytics - Healthcare Analytics\n- Business Intelligence - Data Storytelling\n##Education & Certifications {#education-certifications}\n\nBachelor of Science in Data Science - University Name (Year)\nGoogle Data Analytics Professional Certificate - Google (Year)\nAWS Cloud Practitioner - Amazon Web Services (Year)\n\n##Currently Learning {#currently-learning}\n\nAdvanced Machine Learning techniques\nCloud data engineering\nReal-time analytics platforms\n\n\n“Your favorite data-related quote or personal philosophy”"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact form",
+    "section": "",
+    "text": "CONTACT ME\n\n\n\n  \n      \n      \n        \n          First Name\n          \n        \n        \n          Last Name\n          \n        \n      \n      \n      \n        Email\n        \n      \n      \n      \n        Type your message here...\n        \n      \n      \n      Submit\n    \n    \n  \n  \n  \n  \n    \n      Hiten Ladkani\n      Data Analyst | Marketing Analytics Professional\n    \n    \n    \n      \n        \n          \n        \n        Email\n      \n      \n      \n        \n          \n        \n        LinkedIn\n      \n      \n      \n        \n          \n        \n        GitHub"
+  },
+  {
+    "objectID": "resume.html#technical-tools-stack",
+    "href": "resume.html#technical-tools-stack",
+    "title": "Professional Resume",
+    "section": "Technical Tools Stack",
+    "text": "Technical Tools Stack\n\n  \n    \n    Python\n  \n  \n    \n    SQL\n  \n  \n    \n    PostgreSQL\n  \n  \n    \n    R\n  \n  \n    \n    Apache Spark\n  \n  \n    \n    AWS EC2\n  \n  \n    \n    AWS S3\n  \n  \n    \n    VS Code\n  \n  \n    \n    Jupyter\n  \n  \n    \n    Google Colab\n  \n  \n    \n    GitHub\n  \n  \n    \n    Excel\n  \n  \n    \n    Power BI\n  \n  \n    \n    Tableau\n  \n  \n    \n    Looker Studio\n  \n  \n    \n    Google Analytics\n  \n  \n    \n    Quarto"
   }
 ]
