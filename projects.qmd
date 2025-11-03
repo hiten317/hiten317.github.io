@@ -1,8 +1,663 @@
 ---
-title: "Projects"
+title: " Data Analytics Projects"
 format:
   html:
     theme: darkly
     toc: true
-    toc-depth: 2
+    toc-location: right
 ---
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+```{=html}
+<style>
+/* Projects Page Styling */
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.project-item {
+  background: #1e293b;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  transition: all 0.3s ease;
+}
+
+.project-item:hover {
+  border-color: #60a5fa;
+}
+
+.project-card {
+  padding: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.project-card-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.project-cover {
+  width: 200px;
+  height: 150px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.project-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-cover img {
+  transform: scale(1.05);
+}
+
+.cover-placeholder {
+  color: #64748b;
+  font-size: 2.5rem;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-title {
+  margin-bottom: 0.5rem;
+}
+
+.project-title h3 {
+  color: #e2e8f0;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.project-description-short {
+  color: #cbd5e1;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #1e3a8a;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  color: white;
+  text-decoration: none;
+}
+
+/* Project Details Styling */
+.project-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  background: #0f172a;
+}
+
+.project-details.active {
+  max-height: 2000px;
+}
+
+.details-content {
+  padding: 0 2rem 2rem 2rem;
+}
+
+.accordion {
+  border-bottom: 1px solid #334155;
+  margin-bottom: 1rem;
+}
+
+.accordion:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.accordion-header {
+  padding: 1.5rem 0;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  color: #e2e8f0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.accordion-header:hover {
+  color: #60a5fa;
+}
+
+.accordion-header::after {
+  content: '+';
+  font-size: 1.5rem;
+  color: #60a5fa;
+  transition: transform 0.3s ease;
+}
+
+.accordion-header.active::after {
+  content: '−';
+}
+
+.accordion-content {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion-content.active {
+  padding: 0 0 1.5rem 0;
+  max-height: 1000px;
+}
+
+.content-section {
+  margin-bottom: 1.5rem;
+}
+
+.content-section h4 {
+  color: #60a5fa;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.content-section p {
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.presentation-container {
+  background: #1e293b;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid #334155;
+}
+
+.placeholder-video {
+  width: 100%;
+  height: 400px;
+  background: #0f172a;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  font-size: 1.1rem;
+  border: 2px dashed #334155;
+}
+
+/* Active project styling */
+.project-item.active {
+  border-color: #60a5fa;
+  box-shadow: 0 5px 20px rgba(96, 165, 250, 0.1);
+}
+
+.project-item.active .project-card {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+@media (max-width: 768px) {
+  .project-card-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .project-cover {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+</style>
+```
+
+# Ecommerce Sales Attribution and Marketing Segmentation {#ecommerce-sales}
+
+```{=html}
+<div class="project-item" id="project-item-ecommerce">
+  <div class="project-card" onclick="toggleProjectDetails('project-ecommerce')">
+    <div class="project-card-content">
+      <div class="project-cover">
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Ecommerce Analytics">
+      </div>
+      <div class="project-info">
+        <div class="project-title">
+          <h3>Ecommerce Sales Attribution and Marketing Segmentation</h3>
+        </div>
+        <p class="project-description-short">
+          Analyzing customer purchase patterns and marketing channel effectiveness to optimize sales attribution and create targeted customer segments for personalized marketing campaigns.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/yourusername/ecommerce-attribution" class="project-link" onclick="event.stopPropagation()">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://app.powerbi.com/your-dashboard" class="project-link" onclick="event.stopPropagation()">
+            <i class="fas fa-chart-bar"></i> Power BI
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="project-ecommerce" class="project-details">
+    <div class="details-content">
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Business Problem and Stakeholders Questions
+        </button>
+        <div class="accordion-content">
+          <div class="content-section">
+            <p>Content about business problem and stakeholder questions will go here...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Data Requirements & Gathering
+        </button>
+        <div class="accordion-content">
+          <div class="content-section">
+            <p>Content about data requirements and gathering process will go here...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Data Analysis
+        </button>
+        <div class="accordion-content">
+          <div class="content-section">
+            <p>Content about data analysis methodology and findings will go here...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Presentation
+        </button>
+        <div class="accordion-content">
+          <div class="presentation-container">
+            <div class="placeholder-video">
+              <i class="fas fa-play-circle" style="font-size: 3rem; margin-right: 1rem;"></i>
+              Dashboard/Video Presentation will be embedded here
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+# A/B Testing of Advertising Campaign Results {#ab-testing}
+
+```{=html}
+<div class="project-item" id="project-item-abtesting">
+  <div class="project-card" onclick="toggleProjectDetails('project-abtesting')">
+    <div class="project-card-content">
+      <div class="project-cover">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="A/B Testing">
+      </div>
+      <div class="project-info">
+        <div class="project-title">
+          <h3>A/B Testing of Advertising Campaign Results</h3>
+        </div>
+        <p class="project-description-short">
+          Designing and analyzing A/B tests for advertising campaigns to measure effectiveness, optimize ad spend, and identify the most impactful creative and targeting strategies.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/yourusername/ab-testing" class="project-link" onclick="event.stopPropagation()">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://public.tableau.com/your-dashboard" class="project-link" onclick="event.stopPropagation()">
+            <i class="fas fa-chart-pie"></i> Tableau
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="project-abtesting" class="project-details">
+    <div class="details-content">
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Business Problem and Stakeholders Questions
+        </button>
+        <div class="accordion-content">
+          <div class="content-section">
+            <p>Content about business problem and stakeholder questions will go here...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Data Requirements & Gathering
+        </button>
+        <div class="accordion-content">
+          <div class="content-section">
+            <p>Content about data requirements and gathering process will go here...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Data Analysis
+        </button>
+        <div class="accordion-content">
+          <div class="content-section">
+            <p>Content about data analysis methodology and findings will go here...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Presentation
+        </button>
+        <div class="accordion-content">
+          <div class="presentation-container">
+            <div class="placeholder-video">
+              <i class="fas fa-play-circle" style="font-size: 3rem; margin-right: 1rem;"></i>
+              Dashboard/Video Presentation will be embedded here
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+# NHL Player Salary Prediction Analysis {#nhl-salary}
+```{=html}
+<div class="project-item" id="project-item-nhl">
+  <div class="project-card" onclick="toggleProjectDetails('project-nhl')">
+    <div class="project-card-content">
+      <div class="project-cover">
+        <img src=".assets/images/NHL_image.jpg" alt="Ice Hockey Analytics">
+      </div>
+      <div class="project-info">
+        <div class="project-title">
+          <h3>NHL Player Salary Prediction Analysis</h3>
+        </div>
+        <p class="project-description-short">
+          Building predictive models to forecast NHL player salaries based on performance metrics, team statistics, and market factors to support contract negotiations and team budgeting.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/yourusername/nhl-salary" class="project-link" onclick="event.stopPropagation()">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://lookerstudio.google.com/your-report" class="project-link" onclick="event.stopPropagation()">
+            <i class="fab fa-google"></i> Looker Studio
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="project-nhl" class="project-details">
+    <div class="details-content">
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Business Problem and Stakeholders Questions
+        </button>
+        <div class="accordion-content">
+          <div class="content-section">
+            <p>Content about business problem and stakeholder questions will go here...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Data Requirements & Gathering
+        </button>
+        <div class="accordion-content">
+          <div class="content-section">
+            <p>Content about data requirements and gathering process will go here...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Data Analysis
+        </button>
+        <div class="accordion-content">
+          <div class="content-section">
+            <p>Content about data analysis methodology and findings will go here...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Presentation
+        </button>
+        <div class="accordion-content">
+          <div class="presentation-container">
+            <div class="placeholder-video">
+              <i class="fas fa-play-circle" style="font-size: 3rem; margin-right: 1rem;"></i>
+              Dashboard/Video Presentation will be embedded here
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+# Covid-19 Testing Capacity and Resource Allocation Analysis {#covid-analysis}
+
+```{=html}
+<div class="project-item" id="project-item-covid">
+  <div class="project-card" onclick="toggleProjectDetails('project-covid')">
+    <div class="project-card-content">
+      <div class="project-cover">
+        <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Healthcare Analytics">
+      </div>
+      <div class="project-info">
+        <div class="project-title">
+          <h3>Covid-19 Testing Capacity and Resource Allocation Analysis</h3>
+        </div>
+        <p class="project-description-short">
+          Analyzing testing capacity data and resource allocation patterns to optimize public health response and ensure efficient distribution of testing resources during the pandemic.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/yourusername/covid-analysis" class="project-link" onclick="event.stopPropagation()">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://app.powerbi.com/your-dashboard" class="project-link" onclick="event.stopPropagation()">
+            <i class="fas fa-chart-bar"></i> Power BI
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="project-covid" class="project-details">
+    <div class="details-content">
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Business Problem and Stakeholders Questions
+        </button>
+        <div class="accordion-content">
+          <div class="content-section">
+            <p>Content about business problem and stakeholder questions will go here...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Data Requirements & Gathering
+        </button>
+        <div class="accordion-content">
+          <div class="content-section">
+            <p>Content about data requirements and gathering process will go here...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Data Analysis
+        </button>
+        <div class="accordion-content">
+          <div class="content-section">
+            <p>Content about data analysis methodology and findings will go here...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Presentation
+        </button>
+        <div class="accordion-content">
+          <div class="presentation-container">
+            <div class="placeholder-video">
+              <i class="fas fa-play-circle" style="font-size: 3rem; margin-right: 1rem;"></i>
+              Dashboard/Video Presentation will be embedded here
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+let activeProject = null;
+let activeAccordion = null;
+
+function toggleProjectDetails(projectId) {
+  const projectElement = document.getElementById(projectId);
+  const projectItem = projectElement.parentElement;
+  
+  // Close currently active project
+  if (activeProject && activeProject !== projectId) {
+    const currentProjectElement = document.getElementById(activeProject);
+    const currentProjectItem = currentProjectElement.parentElement;
+    currentProjectElement.classList.remove('active');
+    currentProjectItem.classList.remove('active');
+    
+    // Close all accordions in the previous project
+    const accordions = currentProjectElement.querySelectorAll('.accordion-content');
+    accordions.forEach(accordion => {
+      accordion.classList.remove('active');
+    });
+    
+    const headers = currentProjectElement.querySelectorAll('.accordion-header');
+    headers.forEach(header => {
+      header.classList.remove('active');
+    });
+  }
+  
+  // Toggle current project
+  const isCurrentlyActive = projectElement.classList.contains('active');
+  
+  if (!isCurrentlyActive) {
+    projectElement.classList.add('active');
+    projectItem.classList.add('active');
+    activeProject = projectId;
+  } else {
+    projectElement.classList.remove('active');
+    projectItem.classList.remove('active');
+    activeProject = null;
+  }
+  
+  activeAccordion = null;
+}
+
+function toggleAccordion(button) {
+  const content = button.nextElementSibling;
+  const isCurrentlyActive = content.classList.contains('active');
+  
+  // Close currently active accordion in the same project
+  if (activeAccordion && activeAccordion !== content) {
+    activeAccordion.classList.remove('active');
+    activeAccordion.previousElementSibling.classList.remove('active');
+  }
+  
+  // Toggle current accordion
+  if (!isCurrentlyActive) {
+    content.classList.add('active');
+    button.classList.add('active');
+    activeAccordion = content;
+  } else {
+    content.classList.remove('active');
+    button.classList.remove('active');
+    activeAccordion = null;
+  }
+}
+
+// Smooth scroll to project when TOC link is clicked
+document.addEventListener('DOMContentLoaded', function() {
+  const tocLinks = document.querySelectorAll('nav[data-toc] a[href^="#"]');
+  tocLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+});
+</script>
+```
+
+
+
