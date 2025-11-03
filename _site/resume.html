@@ -178,7 +178,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#download-resume" id="toc-download-resume" class="nav-link active" data-scroll-target="#download-resume">📄 Download Resume</a></li>
+  <li><a href="#professional-summary" id="toc-professional-summary" class="nav-link active" data-scroll-target="#professional-summary">Professional Summary</a></li>
+  <li><a href="#work-experience" id="toc-work-experience" class="nav-link" data-scroll-target="#work-experience">Work Experience</a></li>
+  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
+  <li><a href="#technical-tools-stack" id="toc-technical-tools-stack" class="nav-link" data-scroll-target="#technical-tools-stack">Technical Tools Stack</a></li>
   </ul>
 </nav>
     </div>
@@ -261,6 +264,10 @@ ul.task-list li input[type="checkbox"] {
 
 .job-item, .education-item {
   margin-bottom: 1.5rem;
+  background: #0f172a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #1e3a8a;
 }
 
 .job-title {
@@ -364,15 +371,18 @@ ul.task-list li input[type="checkbox"] {
 .tool-item:nth-child(16) { animation-delay: 3s; }
 .tool-item:nth-child(17) { animation-delay: 3.2s; }
 </style>
-<section id="download-resume" class="level3 download-section">
-<h3 class="anchored" data-anchor-id="download-resume">📄 Download Resume</h3>
-<p><a href="resume_files/Hiten Ladkani Resume_Analyst.pdf" class="download-btn">Download PDF Version</a></p>
-</section>
+<div class="download-section">
+<h3 class="anchored">📄 Download Resume</h3>
+<a href="resume_files/Hiten_Ladkani_Resume_Analyst.pdf" class="download-btn">Download PDF Version</a>
+</div>
+
 <div class="resume-content">
 <section id="professional-summary" class="level2">
 <h2 class="anchored" data-anchor-id="professional-summary">Professional Summary</h2>
+<div class="job-item">
 <p><em>Paid media planner and analyst with over 2 years of experience in planning omni-channel media plans for clients across automotive, entertainment and insurance verticals. I have closely worked with Marketing Science team to establish my foundation in Marketing Analytics and had hands-on experience in designing experiments to report on incremental metrics for digital campaigns. My biggest achievement in my previous role was identifying audience segments for an automotive clients campaign using historical data and 3rd party audience data and then test it on new platforms &amp; combining with influencer marketing to create a wider impact. The campaign was awarded Twitch campaign of the year for esports category in 2022 and I had the opportunity to present the case study.</em></p>
 <p><em>More recently I am working as Data Analyst at a non-profit and using data from various government sources to empower their event planning and fundraising strategy using tools like SQL, Python and Power BI.</em></p>
+</div>
 <hr>
 </section>
 <section id="work-experience" class="level2">
@@ -399,24 +409,33 @@ ul.task-list li input[type="checkbox"] {
 <li>Collaborated with Marketing science team to build a Datorama dashboard tracking cross-channel performance (paid social, search, programmatic, CTV &amp; OOH), integrated platform-specific metrics (Facebook CPM, YouTube CPV) into a unified view, enabling weekly recommendations and optimization reports to the client.</li>
 <li>Led competitive analysis using industry and audience data from Telmar, Vividata, Nielsen and Environics through Omni, identifying Share of Voice (SOV) for Porsche’s luxury auto category.</li>
 </ul>
+</div>
 <div class="job-item">
 <p><strong><span class="job-title">Media Planning Associate</span></strong><br>
 <span class="company">Omnicom Media Group</span><br>
 <span class="date">May 2022 - Oct 2023</span></p>
-</div>
 <ul>
 <li>Managed end-to-end ad operations including campaign trafficking sheets, tag QA, and insertion orders across multiple channels, reducing errors by 20% through systematic process improvements and cross-checks with execution team</li>
 <li>Assisted in QA checks for a Tableau dashboard (validating GA4 metrics vs.&nbsp;platform data) ensuring accuracy for bi-weekly client reporting presentations.</li>
 <li>Partnered with Digital execution team to leverage Lotame and Nielsen audiences under Omni for refining Ferrero’s ecommerce campaigns, improving ROAS by 3.5x than the traditional search plan.</li>
-<li><h2 id="pulled-and-compiled-weekly-platform-reports-google-ads-dv360-meta-ads-manager-for-senior-planners-flagging-underperforming-campaigns-for-optimization." class="anchored">Pulled and compiled weekly platform reports (Google Ads, DV360, Meta Ads Manager) for senior planners, flagging underperforming campaigns for optimization.</h2></li>
+<li>Pulled and compiled weekly platform reports (Google Ads, DV360, Meta Ads Manager) for senior planners, flagging underperforming campaigns for optimization.</li>
 </ul>
+</div>
+<hr>
+</section>
 <section id="education" class="level2">
 <h2 class="anchored" data-anchor-id="education">Education</h2>
 <div class="education-item">
-<p><strong><span class="job-title">Bachelor of Science in Data Science</span></strong><br>
-<span class="school">University of Technology</span><br>
-<span class="date">Graduated: May 2021 | GPA: 3.8/4.0</span></p>
-<p><em>Relevant Coursework: Machine Learning, Statistical Analysis, Database Systems, Data Visualization</em></p>
+<p><strong><span class="job-title">Master of Science in Applied Business Analytics</span></strong><br>
+<span class="school">Boston University</span><br>
+<span class="date">Expected: May 2025 | GPA: 3.8/4.0</span></p>
+<p><em>Relevant Coursework: Data Mining, Big Data Analytics, Machine Learning, Data Visualization, Statistical Methods</em></p>
+</div>
+<div class="education-item">
+<p><strong><span class="job-title">Post-graduate Certificate Diploma</span></strong><br>
+<span class="school">Seneca College of Arts &amp; Science</span><br>
+<span class="date">Graduated: April 2022 | GPA: 3.8/4.0</span></p>
+<p><em>Relevant Coursework: Case tudy analysis, Media planning, Advertising strategy, Product analysis.</em></p>
 </div>
 <hr>
 </section>
@@ -492,12 +511,10 @@ ul.task-list li input[type="checkbox"] {
     <p class="tool-name">Quarto</p>
   </div>
 </div>
-</section>
-</div>
+</section></div> <!-- Close resume-content -->
 
 
-</section>
-</div>
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
