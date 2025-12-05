@@ -438,6 +438,52 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-right-radius: 0;
 }
 
+/* NEW STYLES FOR SECTION CONTENT */
+.section-content {
+  margin-bottom: 1.5rem;
+}
+
+.section-content h4 {
+  color: #60a5fa;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.section-content p {
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.section-content img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1rem 0;
+  border: 1px solid #334155;
+  display: block;
+}
+
+.section-content ul, .section-content ol {
+  color: #cbd5e1;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.section-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.section-content strong {
+  color: #93c5fd;
+}
+
+.section-content em {
+  color: #94a3b8;
+  font-style: italic;
+}
+
 @media (max-width: 768px) {
   .project-card-content {
     flex-direction: column;
@@ -464,14 +510,14 @@ ul.task-list li input[type="checkbox"] {
           <h3 class="anchored" data-anchor-id="ecommerce-sales">Ecommerce Sales Attribution and Marketing Segmentation</h3>
         </div>
         <p class="project-description-short">
-          Analyzing customer purchase patterns and marketing channel effectiveness to optimize sales attribution and create targeted customer segments for personalized marketing campaigns.
+          Analyzing customer purchase patterns via an RFM model and marketing channel effectiveness to optimize sales attribution and create targeted customer segments for personalized marketing campaigns.
         </p>
         <div class="project-links">
           <a href="https://github.com/yourusername/ecommerce-attribution" class="project-link" onclick="event.stopPropagation()">
             <i class="fab fa-github"></i> GitHub
           </a>
-          <a href="https://app.powerbi.com/your-dashboard" class="project-link" onclick="event.stopPropagation()">
-            <i class="fas fa-chart-bar"></i> Power BI
+          <a href="https://public.tableau.com/app/profile/hiten.ladkani/viz/SalesAttributionAudienceSegmentationDashboard/FinalDashboard?publish=yes" class="project-link" onclick="event.stopPropagation()">
+            <i class="fas fa-chart-bar"></i> Tableau
           </a>
         </div>
       </div>
@@ -480,13 +526,45 @@ ul.task-list li input[type="checkbox"] {
 
   <div id="project-ecommerce" class="project-details">
     <div class="details-content">
+      <!-- NEW PROJECT SCENARIO SECTION -->
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Project Scenario
+        </button>
+        <div class="accordion-content">
+          <div class="section-content">
+            <h4 class="anchored">Context and Overview</h4>
+            <p>As a junior marketing data analyst for an e-commerce brand running on Shopify, my job is to analyze purchase and campaign data to identify what channels are driving most revenue, how different are purchase behaviors of various customer segments and if there are any untapped opportunities as well as how the business can improve further. </p>
+            
+            <h4 class="anchored">Key Objectives</h4>
+            <ul>
+              <li>Analyze sales performance metrics by channel for future budget allocation</li>
+              <li>Identify customer segment profiles and analyze their purchase patterns</li>
+              <li>Provide actionable recommendations for marketing channel mix and KPI improvements</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <div class="accordion">
         <button class="accordion-header" onclick="toggleAccordion(this)">
           Business Problem and Stakeholders Questions
         </button>
         <div class="accordion-content">
-          <div class="content-section">
-            <p>Content about business problem and stakeholder questions will go here...</p>
+          <div class="section-content">
+            <h4 class="anchored">Business Challenge</h4>
+            <p>How can we clearly quantify each marketing channel impact on business  outcomes and surface various customer segments for the brand by leveraging the Shopify transaction data as well as campaign data to optimize the marketing spend and personalize communication strategy for each customer segment? </p>
+            
+            <h4 class="anchored">Stakeholder Questions</h4>
+            <ul>
+              <li><strong>E-commerce Manager:</strong> Needs clear performance metrics by each channel to formulate future budget allocation.</li>
+              <li><strong>Marketing Lead:</strong> Seeks insight into attribution models (first-touch, last-touch and multi-touch) to optimize campaigns and channel mix.</li>
+              <li><strong>Merchandising Team:</strong> Wants clearly identified customer segment profiles to tailor site content and promotions.</li>
+            </ul>
+            
+            <!-- Example image with text -->
+            <img src="images/business-problem.jpg" alt="Business Problem Visualization">
+            <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Visual representation of the business problem</em></p>
           </div>
         </div>
       </div>
@@ -496,8 +574,18 @@ ul.task-list li input[type="checkbox"] {
           Data Requirements &amp; Gathering
         </button>
         <div class="accordion-content">
-          <div class="content-section">
-            <p>Content about data requirements and gathering process will go here...</p>
+          <div class="section-content">
+            <h4 class="anchored">Data Sources</h4>
+            <ul>
+              <li><strong>Orders table:</strong> This is the source table, and the table includes digital purchase transactions data. What was bought, when and how much. </li>
+              <li><strong>DimAttribution:</strong> This is the dimension table which includes data on the traffic source in terms of marketing channel and which device the session was logged in</li>
+              <li><strong>DimCustomer:</strong> Another dimension table that contains customer information. The orders table is the source of truth in this analysis, and the dimension tables will be joined to the source table to create our analytical base which will be the prep table.</li>
+            </ul>
+            
+            <h4 class="anchored">Data Transformation &amp; Consolidation</h4>
+            <p><strong>Prep Table</strong> - This table is prepared by using the RIGHT JOIN with the Orders table on the two dimension tables using order number as the reference key. 
+            This provides attribution and customer information for each order number in the Orders table and those that have missing information are excluded. A quick data validation check is done to ensure that the prep table rows does not exceed order table rows in case of the RIGHT JOIN and in LEFT JOIN the row numbers should be equal.</p>
+
           </div>
         </div>
       </div>
@@ -507,8 +595,19 @@ ul.task-list li input[type="checkbox"] {
           Data Analysis
         </button>
         <div class="accordion-content">
-          <div class="content-section">
-            <p>Content about data analysis methodology and findings will go here...</p>
+          <div class="section-content">
+            <h4 class="anchored">Exploring distribution of key metrics and scope of data (Exploratory Data Analysis)</h4>
+            <p>Describe your analysis methodology...</p>
+            
+            <h4 class="anchored">Key Findings</h4>
+            <ul>
+              <li>Finding 1 with supporting evidence</li>
+              <li>Finding 2 with supporting evidence</li>
+              <li>Finding 3 with supporting evidence</li>
+            </ul>
+            
+            <img src="images/analysis-results.jpg" alt="Analysis Results">
+            <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Key analysis results visualization</em></p>
           </div>
         </div>
       </div>
