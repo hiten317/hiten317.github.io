@@ -133,7 +133,7 @@ format:
 }
 
 .project-details.active {
-  max-height: 2000px;
+  max-height: none; /* CHANGED FROM 2000px to none */
 }
 
 .details-content {
@@ -190,7 +190,8 @@ format:
 
 .accordion-content.active {
   padding: 0 0 1.5rem 0;
-  max-height: 1000px;
+  max-height: none; /* CHANGED from 1000px to none */
+  overflow-y: visible; /* FIXED TYPO: was overflow0y */
 }
 
 .content-section {
@@ -402,8 +403,36 @@ format:
         <div class="accordion-content">
           <div class="section-content">
             <h4>Exploring distribution of key metrics and scope of data (Exploratory Data Analysis)</h4>
-            <p>Describe your analysis methodology...</p>
+            <p> i. <strong>Summary statistics of Order & refund amounts:</strong>The order amounts distribution heavy right tail and most orders clustered on the left with higher skew on the left side because of refunded orders. At initial stage this suggests high number of one-time purchasers.</p>
             
+            <img src="https://i.postimg.cc/hjPDcZqy/Image1.png" alt="Analysis Results">
+            <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Summary statistics</em></p>  
+
+            <p> The refund amounts in the dataset is only 2, which reduces the scope of the analysis as we need not analyze these refund amounts since these numbers are expected in digital transactions.</p>
+
+            <img src="https://i.postimg.cc/XvBhFwk7/Image2.png" alt="Analysis Results">
+            <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Summary statistics</em></p> 
+
+            <p> ii. <strong>Scope of dataset and volume of orders by month:</strong>The data ranges from March 13th 2024 to 22nd July 2025, just over an year worth of data. </p>
+
+            <img src= "https://i.postimg.cc/P5Qb7NfY/Image3.png" alt="Analysis Results">
+            <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Dataset scope</em></p> 
+
+            <img src= "https://i.postimg.cc/yxhWNgbY/Image4.png" alt="Analysis Results">
+            <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Monthly orders</em></p> 
+
+            <p>As typically observed in retail sales, correction happens after initial burst of sales after opening (assuming the brand opened its online store since March 2024) which has happened in this case as the sales in the 1st quarter of 2025 dropped to some extent. </p>
+
+            <p> ii. <strong>Analyzing distribution of key metrics:</strong></p>
+
+            <img src= "https://i.postimg.cc/yxNY7QcL/Image5.png" alt="Analysis Results">
+            <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Order status distribution</em></p> 
+
+            <p>Orders that have pending payment will be excluded from revenue and other analysis, so the results are not inflated.</p> 
+
+            <img src= "https://i.postimg.cc/h4HPkrh9/Image6.png" alt="Analysis Results">
+            <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Payment methods distribution</em></p> 
+
             <h4>Key Findings</h4>
             <ul>
               <li>Finding 1 with supporting evidence</li>
