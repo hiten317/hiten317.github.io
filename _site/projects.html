@@ -662,34 +662,95 @@ ul.task-list li input[type="checkbox"] {
         <div class="accordion-content">
           <div class="section-content">
             <h4 class="anchored">Shaping Data and Analysis</h4>
-            <p><strong>Shaping Data and analysis:</strong>.</p>
             <p>This is a critical stage where cleaned data is being transformed into analysis-ready views. This profiling will enable implementation of RFM segmentation of customers and cohort analysis to understand customer behavior, long-term value and loyalty for the business.</p>
 
             <p><strong>i. Revenue by Channel and Lifetime Value of customers:</strong>Order_count and Average Order value are also calculated for orders attributed to each channel to give a complete picture of contribution of a marketing channel</p>
 
             <img src="https://i.postimg.cc/pdcg9zcY/Image11.png" alt="Analysis Results">
             <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Revenue and AOV</em></p>
+
+            <p>Almost 87% of the total revenue is coming from the top 3 channels and just over 42% of it comes organically, which suggests that the brand and its products are quite popular among customers. YouTube (OLV or CTV channel) as a platform has turned out to be good contributor to the revenue and so has google ads. However, the difference between the 2nd channel and 3rd channel is almost ~15%. Only 5.33% of the total customers have made more than one purchase.</p>
             
             <img src="https://i.postimg.cc/fLxf4hdz/Image12.png" alt="Analysis Results">
             <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>LTV by customer</em></p>
 
-            <p>Life span days for each customer are calculated based on their purchase data, LTV calculation in this case is useless as most of the customers are one-time buyers till date.
+            <p>Life span days for each customer are calculated based on their purchase data, LTV calculation in this case is useless as most of the customers are one-time buyers till date.</p>
 
-          </p></div>
+            <p><strong>ii. Recency, Frequency and Monetary Segmentation model (RFM):</strong>
+            <img src="https://i.postimg.cc/90xB4W1w/Image13.png" alt="Analysis Results">
+            </p><p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>RFM model results</em></p>
+            
+            <p>Each behavior is categorized into 4 different quartiles. For reference: 
+               Recency – How recent the customers made a purchase (lower = more recent)
+               Frequency – How many times did they make a purchase (lower = more active)
+               Monetary – How much do they spend in total with their purchase (lower = high spender)
+               This score across the 3 metrics helps create behavior-based segments like Champions (1-1-1) and At risk customers (3/4, 3/5, 3/4).</p>
+
+            <p>As seen in previous analysis, the business has lot of newly acquired customers so we have high number of customers falling in the (R1F1M1-4) category. Opportunities lies for improvement with customers that are in the (R2F2M1-4) category by analyzing gaps in their purchase experience and sentiment analysis. There are 177 customers in the R3F3 or R4F4 category which are the least profitable and budget allocation to this category should be carefully implemented as these can be no longer interested cohort.</p>
+
+            <p><strong>iii. Cohort Retention Analysis:</strong>
+            
+            <img src="https://i.postimg.cc/nc2LDXvv/Image14.png" alt="Analysis Results">
+            </p><p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Purchase behavior</em></p>
+
+            <p>Cohort Analysis understanding: In simple ways cohort analysis can be thought of grouping your customers from their start date and tracking their behavior over time. 
+            RFM: Taking a snapshot of customers TODAY 
+            Cohort: Making a movie of their behavior over TIME
+            Types of Cohorts: Time-based – Grouping by when they first purchased (acquisition date)
+            Behavior-based – Group by their first action or characteristic
+           
+           </p><ul>
+            RFM tells you:
+            
+            <li>Who your best customers are RIGHT NOW</li>
+            <li>What their current value is</li>
+           <li>How to segment them for targeted campaigns</li>
+            </ul>
+            <ul>
+            Cohort Analysis tells you:
+
+            <li>When customers tend to drop off</li>
+            <li>How long different segments stay valuable</li>
+            <li>Whether new cohorts behave better/worse than older ones</li>
+            </ul>
+            In this case Cohort analysis has been implemented using time-based data as customers are grouped by their first month of purchase (cohort month) and then tracking how many subsequent months they remain active.<p></p>
+
+            <img src="https://i.postimg.cc/63x0GbKJ/Image15.png" alt="Analysis Results">
+            <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Cohorts</em></p>
+
+            <p>The quantiles here are split into 5 equal groups as there are 375 customers and the spending resembles pareto distribution where 20% of the customers are bringing in 80% of the revenue for the business. The difference between the loyalists and low/one-time spenders is that loyalists outspend them by 51% suggesting there is lot of gaps for the business to fill between 1-3 quartiles.</p>
+
+            <p><strong>iv. Top products by Customer segments:</strong>
+
+            <img src="https://i.postimg.cc/QxST38d3/Image16.png" alt="Analysis Results">
+            </p><p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Top products by segments</em></p>
+            
+            <p>ShipStream is the top product that has generated the most revenue for 5 out of 7 customer segments which indicates it is a popular product. On average it accounts for 60% of the revenue across the segments. All the New customers have just purchased one product which is ProspectHub and it generates the lowest revenue among all the other top products. In terms of trend, for all the segments the top 2 products generate the majority of the revenue than the remaining in the archetypes.</p>
+          </div>
         </div>
       </div>
 
       <!-- PRESENTATION SECTION -->
       <div class="accordion">
         <button class="accordion-header" onclick="toggleAccordion(this)">
-          Dashboard Presentation
+          Dashboard Presentation &amp; Final recommendations
         </button>
         <div class="accordion-content">
           <div class="presentation-container">
-            <div class="placeholder-video">
-              <i class="fas fa-play-circle" style="font-size: 3rem; margin-right: 1rem;"></i>
-              Dashboard/Video Presentation will be embedded here
+              <h4 style="color: #60a5fa; margin-bottom: 1rem;" class="anchored">Dashboard Walkthrough Video</h4>
+                 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background: #0f172a;">
+              <iframe src="https://www.loom.com/share/f8aad7a4e6a94eeda73c9fec650b5917" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"> 
+              </iframe>
             </div>
+
+              <ul>
+              <p><strong><em>Final recommendations:</em></strong>
+                </p><li>Collect session &amp; user journey data on the website to find gaps in the user experience specifically for At churn risk customers</li>
+                <li>Build post-purchase experience stack like email/SMS flows (how-to, reshare UGC, cross-sell etc) to target the first 30 to 60 days and lift the repeat purchase rate from 5.33% to 8-10%. Track the cohort M+1 – M+3 after these efforts for the repeat purchase rate.</li>
+                <li>Set a KPI benchmark to grow Champions’ share of revenue and measure the incremental AOV and revenue as well as order frequency after attempting these efforts. Providing early access to Champions’, limited edition drops and exclusive surprises to top their experience.</li>
+                <li>RFM archetypes can be used to redefine the homepage modules with favorite packs or promotional offers and cross-sell blocks. For example, Champions’ would look at premium bundles whereas one purchase wonders would look at exclusive enticing offers that force them to make the move. At churn risk customers will look for promotional offers</li>
+                <li>In terms of the other products, analyze the products that don’t make large share of revenue to see if they are one-time purchase by nature or if there is potential to improve the product or how they are put on the shelf.</li>
+              </ul>
           </div>
         </div>
       </div>
