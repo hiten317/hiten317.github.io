@@ -190,8 +190,8 @@ format:
 
 .accordion-content.active {
   padding: 0 0 1.5rem 0;
-  max-height: none; /* CHANGED from 1000px to none */
-  overflow-y: visible; /* FIXED TYPO: was overflow0y */
+  max-height: none; 
+  overflow-y: visible; 
 }
 
 .content-section {
@@ -332,7 +332,7 @@ format:
 
   <div id="project-ecommerce" class="project-details">
     <div class="details-content">
-      <!-- NEW PROJECT SCENARIO SECTION -->
+      <!-- PROJECT SCENARIO SECTION -->
       <div class="accordion">
         <button class="accordion-header" onclick="toggleAccordion(this)">
           Project Scenario
@@ -352,6 +352,7 @@ format:
         </div>
       </div>
 
+      <!-- BUSINESS PROBLEM SECTION -->
       <div class="accordion">
         <button class="accordion-header" onclick="toggleAccordion(this)">
           Business Problem and Stakeholders Questions
@@ -359,7 +360,7 @@ format:
         <div class="accordion-content">
           <div class="section-content">
             <h4>Business Challenge</h4>
-            <p>How can we clearly quantify each marketing channel impact on business  outcomes and surface various customer segments for the brand by leveraging the Shopify transaction data as well as campaign data to optimize the marketing spend and personalize communication strategy for each customer segment? </p>
+            <p>How can we clearly quantify each marketing channel impact on business outcomes and surface various customer segments for the brand by leveraging the Shopify transaction data as well as campaign data to optimize the marketing spend and personalize communication strategy for each customer segment? </p>
             
             <h4>Stakeholder Questions</h4>
             <ul>
@@ -368,13 +369,13 @@ format:
               <li><strong>Merchandising Team:</strong> Wants clearly identified customer segment profiles to tailor site content and promotions.</li>
             </ul>
             
-            <!-- Example image with text -->
             <img src="images/business-problem.jpg" alt="Business Problem Visualization">
             <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Visual representation of the business problem</em></p>
           </div>
         </div>
       </div>
 
+      <!-- DATA REQUIREMENTS SECTION -->
       <div class="accordion">
         <button class="accordion-header" onclick="toggleAccordion(this)">
           Data Requirements & Gathering
@@ -391,14 +392,14 @@ format:
             <h4>Data Transformation & Consolidation</h4>
             <p><strong>Prep Table</strong> - This table is prepared by using the RIGHT JOIN with the Orders table on the two dimension tables using order number as the reference key. 
             This provides attribution and customer information for each order number in the Orders table and those that have missing information are excluded. A quick data validation check is done to ensure that the prep table rows does not exceed order table rows in case of the RIGHT JOIN and in LEFT JOIN the row numbers should be equal.</p>
-
           </div>
         </div>
       </div>
 
+      <!-- DATA CLEANING & TRANSFORMATION SECTION -->
       <div class="accordion">
         <button class="accordion-header" onclick="toggleAccordion(this)">
-          Data Analysis
+          Data Cleaning & Transformation
         </button>
         <div class="accordion-content">
           <div class="section-content">
@@ -415,40 +416,78 @@ format:
 
             <p> ii. <strong>Scope of dataset and volume of orders by month:</strong>The data ranges from March 13th 2024 to 22nd July 2025, just over an year worth of data. </p>
 
-            <img src= "https://i.postimg.cc/P5Qb7NfY/Image3.png" alt="Analysis Results">
+            <img src="https://i.postimg.cc/P5Qb7NfY/Image3.png" alt="Analysis Results">
             <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Dataset scope</em></p> 
 
-            <img src= "https://i.postimg.cc/yxhWNgbY/Image4.png" alt="Analysis Results">
+            <img src="https://i.postimg.cc/yxhWNgbY/Image4.png" alt="Analysis Results">
             <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Monthly orders</em></p> 
 
             <p>As typically observed in retail sales, correction happens after initial burst of sales after opening (assuming the brand opened its online store since March 2024) which has happened in this case as the sales in the 1st quarter of 2025 dropped to some extent. </p>
 
-            <p> ii. <strong>Analyzing distribution of key metrics:</strong></p>
+            <p> iii. <strong>Analyzing distribution of key metrics:</strong></p>
 
-            <img src= "https://i.postimg.cc/yxNY7QcL/Image5.png" alt="Analysis Results">
+            <img src="https://i.postimg.cc/yxNY7QcL/Image5.png" alt="Analysis Results">
             <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Order status distribution</em></p> 
 
             <p>Orders that have pending payment will be excluded from revenue and other analysis, so the results are not inflated.</p> 
 
-            <img src= "https://i.postimg.cc/h4HPkrh9/Image6.png" alt="Analysis Results">
+            <img src="https://i.postimg.cc/h4HPkrh9/Image6.png" alt="Analysis Results">
             <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Payment methods distribution</em></p> 
 
-            <h4>Key Findings</h4>
-            <ul>
-              <li>Finding 1 with supporting evidence</li>
-              <li>Finding 2 with supporting evidence</li>
-              <li>Finding 3 with supporting evidence</li>
-            </ul>
+            <p>Most of the transactions have been completed through card and some of these categories can be collapsed into one to streamline analysis.</p>
             
-            <img src="images/analysis-results.jpg" alt="Analysis Results">
-            <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Key analysis results visualization</em></p>
+            <img src="https://i.postimg.cc/Wb5T7LxM/Image7.png" alt="Analysis Results">
+            <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Orders by countries</em></p> 
+
+            <p>Similar to the trend in order amounts, majority of the transactions have come from 7-8 countries and the distribution is similar with heavy right tail. </p> 
+
+            <img src="https://i.postimg.cc/D0bLPPwn/Image8.png" alt="Analysis Results">
+            <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Attribution Channels</em></p>
+
+            <p> Similar to payment methods, there are similar categories of channels which can be collapsed into one.</p>
+
+            <img src="https://i.postimg.cc/SxXR2xjK/Image9.png" alt="Analysis Results">
+            <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Attribution Devices</em></p>
+            
+            <p> Desktop and mobile are the only two sources for this data and the duplicates need to be removed and combined into one. </p>
+
+            <p> iv. <strong>Data Cleaning and Fixing fields:</strong>Fixing Attribution Sources and Devices to create clean columns</p>
+            
+            <img src="https://i.postimg.cc/rmT5NrtC/Imag10.png" alt="Analysis Results">
+            <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Attribution Channels</em></p>
           </div>
         </div>
       </div>
 
+      <!-- DATA ANALYSIS SECTION -->
       <div class="accordion">
         <button class="accordion-header" onclick="toggleAccordion(this)">
-          Presentation
+          Data Analysis
+        </button>
+        <div class="accordion-content">
+          <div class="section-content">
+            <h4>Shaping Data and Analysis</h4>
+            <p><strong>Shaping Data and analysis:</strong>.</p>
+            <p>This is a critical stage where cleaned data is being transformed into analysis-ready views. This profiling will enable implementation of RFM segmentation of customers and cohort analysis to understand customer behavior, long-term value and loyalty for the business.</p>
+
+            <p><strong>i. Revenue by Channel and Lifetime Value of customers:</strong>Order_count and Average Order value are also calculated for orders attributed to each channel to give a complete picture of contribution of a marketing channel</p>
+
+            <img src="https://i.postimg.cc/pdcg9zcY/Image11.png" alt="Analysis Results">
+            <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Revenue and AOV</em></p>
+            
+            <img src="https://i.postimg.cc/fLxf4hdz/Image12.png" alt="Analysis Results">
+            <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>LTV by customer</em></p>
+
+            <p>Life span days for each customer are calculated based on their purchase data, LTV calculation in this case is useless as most of the customers are one-time buyers till date.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- PRESENTATION SECTION -->
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Dashboard Presentation
         </button>
         <div class="accordion-content">
           <div class="presentation-container">
