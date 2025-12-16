@@ -764,17 +764,17 @@ ul.task-list li input[type="checkbox"] {
       </div>
       <div class="project-info">
         <div class="project-title">
-          <h3 class="anchored" data-anchor-id="ab-testing">A/B Testing of Advertising Campaign Results</h3>
+          <h3 class="anchored" data-anchor-id="ab-testing">A/B Testing analysis of Direct Mail Marketing Campaign</h3>
         </div>
         <p class="project-description-short">
-          Designing and analyzing A/B tests for advertising campaigns to measure effectiveness, optimize ad spend, and identify the most impactful creative and targeting strategies.
+          Analyzing A/B tests for advertising campaigns to measure effectiveness, optimize ad spend, and identify the most impactful creative and targeting strategies as well as recommending audience strategy based on purchase patterns.
         </p>
         <div class="project-links">
           <a href="https://github.com/yourusername/ab-testing" class="project-link" onclick="event.stopPropagation()">
             <i class="fab fa-github"></i> GitHub
           </a>
-          <a href="https://public.tableau.com/your-dashboard" class="project-link" onclick="event.stopPropagation()">
-            <i class="fas fa-chart-pie"></i> Tableau
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiMjg2MDFiNGYtMTVjYS00OWU1LThiNGItNzliNjk5MzUxYmYxIiwidCI6ImQ1N2QzMmNjLWMxMjEtNDg4Zi1iMDdiLWRmZTcwNTY4MGM3MSIsImMiOjN9" class="project-link" target="_blank" onclick="event.stopPropagation()">
+            <i class="fas fa-chart-pie"></i> Power BI
           </a>
         </div>
       </div>
@@ -783,28 +783,77 @@ ul.task-list li input[type="checkbox"] {
 
   <div id="project-abtesting" class="project-details">
     <div class="details-content">
+      <!-- SECTION 1: Project Scenario -->
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Project Scenario
+        </button>
+        <div class="accordion-content">
+          <div class="content-section">
+            <h4 class="anchored">Context and Overview</h4>
+            <p>As a junior marketing data analyst for a Marketing agency working for a cruise client, you have received the AB testing 
+            results for a direct mail marketing campaign and the client wants to understand if the test generated incremental results as well as any notable changes in the audience purchase patterns and any other noteworthy changes from status quo.
+            </p>
+            
+            <h4 class="anchored">Key Objectives</h4>
+            <ul>
+              <li>Compare overall performance of test group against the control group</li>
+              <li>Identify patterns and/or anomalies by deep diving into performance by variables (creatives, destinations)</li>
+              <li>Analyze audience performance by key metrics identified.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 2: Business Problem and Stakeholders Questions -->
       <div class="accordion">
         <button class="accordion-header" onclick="toggleAccordion(this)">
           Business Problem and Stakeholders Questions
         </button>
         <div class="accordion-content">
           <div class="content-section">
-            <p>Content about business problem and stakeholder questions will go here...</p>
+            <h4 class="anchored">Business Problem:</h4>
+            <p> How can we justify the leadership team of the cruise company to invest in additional direct mail marketing spending towards identified segments to generate incremental bookings and profitable returns which would otherwise have not been generated if we just maintained the status quo.</p>
+
+            <h4 class="anchored">Stakeholder Questions</h4>
+            <ul>
+              <li>Campaigns/audiences that can be scaled up or replicated.</li>
+              <li>Destinations that can be reconsidered/dropped</li>
+              <li>Top audience segments and the targeting strategy for them</li>
+              <li>High and low performing creatives</li>
+              <li>Interaction effect of variables</li>
+              <li>Actionable recommendations for future campaigns</li>
+            </ul>
           </div>
         </div>
       </div>
 
+      <!-- SECTION 3: Data Requirements & Gathering -->
       <div class="accordion">
         <button class="accordion-header" onclick="toggleAccordion(this)">
           Data Requirements &amp; Gathering
         </button>
         <div class="accordion-content">
           <div class="content-section">
-            <p>Content about data requirements and gathering process will go here...</p>
+            <h4 class="anchored">Data source</h4>
+            <p>A raw data excel file <strong>(AB testing analysis)</strong> contains almost 56K records of Test and Control group for the mail marketing campaign. Each record has actual and project conversions and revenue rolled up by Destinations, and it also contains creative, audience segment and campaign details for each record for granular analysis. Overall the data is confirmed to be at perfect aggregate level to perform the necessary analysis and allows us to compare the overall impact of Test group across different markets.</p>
           </div>
         </div>
       </div>
 
+      <!-- SECTION 4: Data Cleaning & Transformation -->
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Data Cleaning &amp; Transformation
+        </button>
+        <div class="accordion-content">
+          <div class="content-section">
+            <p>Content about data cleaning and transformation will go here...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 5: Data Analysis -->
       <div class="accordion">
         <button class="accordion-header" onclick="toggleAccordion(this)">
           Data Analysis
@@ -816,9 +865,10 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
+      <!-- SECTION 6: Dashboard Presentation & Final recommendations -->
       <div class="accordion">
         <button class="accordion-header" onclick="toggleAccordion(this)">
-          Presentation
+          Dashboard Presentation &amp; Final recommendations
         </button>
         <div class="accordion-content">
           <div class="presentation-container">
