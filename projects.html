@@ -848,7 +848,7 @@ ul.task-list li input[type="checkbox"] {
         </button>
         <div class="accordion-content">
           <div class="content-section">
-            <p>Content about data cleaning and transformation will go here...</p>
+            <p>The raw data of AB test results are at perfect aggregate level, hence no major transformations are required. Orders and revenue are rolled up at destination level. From an analysis perspective, custom field like 'v1' are not important in this case and since Control group is not exposed to any change in variables, the audience segment is blank against those rows. However, we need baseline for the comparison, so we keep the control rows as well. There are Test records which do not have a corresponding 'has hold' record however these are newly tested creatives/campaigns so we keep them for now. The client has set benchmarks for campaigns that are considered statistically significant for analysis - <strong>those with at least 25000 mail count</strong></p>
           </div>
         </div>
       </div>
@@ -860,28 +860,49 @@ ul.task-list li input[type="checkbox"] {
         </button>
         <div class="accordion-content">
           <div class="content-section">
-            <p>Content about data analysis methodology and findings will go here...</p>
+             <p>A high-level summary of the key findings from the A/B test. For detailed metrics, interactive exploration, and final strategic recommendations, please see the complete <a href="#dashboard-presentation" class="inline-link">Dashboard Presentation &amp; Final recommendations</a>.</p>
+
+             <h4 class="anchored">High level performance overview</h4>
+             <img src="https://i.postimg.cc/qvjS0zQ4/Image1.png" alt="Analysis Results">
+            <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>High level Control vs Test performance</em></p>
+            <ul>
+             <li><strong>Control group</strong> is the one that received the standard mailing and defines the status quo, they are the baseline for comparison.</li>
+             <li><strong>Test group</strong> recieves the modified version of mails where one key element is changed (in this case it is the destination, creative or a comnbination of both)
+             </li><li>The incremental metrics in the above table will be for test group compared to baseline group, as the volume of mails is 82% higher in the test group it influences the incremental numbers strongly.</li>
+            
+            <img src="https://i.postimg.cc/DZqR95M9/Image2.png" alt="Analysis Results">
+            <p style="font-size: 0.9rem; color: #94a3b8; text-align: center;"><em>Performance benchmarks</em></p>
+            </ul>
+            
+            <h4 class="anchored">Key analysis points</h4>
+            <ul>
+              <li>The 25K mail volume benchmark removes any campaigns where the hold/control group is not present</li>
+              <li>Kids sail free and Default are the combined group of destinations that are mailed consistently throughout the year and hence their performance is consistent</li>
+              <li>AOV in the cruise industry is expected to be around $3K, because of the way the packages are designed and sold and hence it shouldn't be considered as basis for audience segmentation.</li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <!-- SECTION 6: Dashboard Presentation & Final recommendations -->
-      <div class="accordion">
+           <!-- SECTION 6: Dashboard Presentation & Final recommendations -->
+      <div class="accordion" id="dashboard-presentation">
         <button class="accordion-header" onclick="toggleAccordion(this)">
           Dashboard Presentation &amp; Final recommendations
         </button>
         <div class="accordion-content">
           <div class="presentation-container">
-            <div class="placeholder-video">
-              <i class="fas fa-play-circle" style="font-size: 3rem; margin-right: 1rem;"></i>
-              Dashboard/Video Presentation will be embedded here
-            </div>
+            <!-- PASTE YOUR GOOGLE SLIDES "PUBLISH TO WEB" EMBED CODE HERE -->
+            <!-- Example (replace with your actual embed code): -->
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTUTXYAYbYMnz8jjhqB7rz1lrLaB5RhS2DIHRezoKEyqkuK3SykmZ32zjvsr4Zs8Q/pubembed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="1440" height="839" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
           </div>
+          <p>Please click on the Power BI dashboard link for the Live Power BI report to
+             play with the data</p>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+      <!-- END OF SECTION 6 -->
+    </div> <!-- This closes <div class="details-content"> -->
+  </div> <!-- This closes <div id="project-abtesting" class="project-details"> -->
+</div> <!-- This closes the main <div class="project-item" id="project-item-abtesting"> -->
 </section>
 <section id="nhl-salary" class="level1">
 <h1>NHL Player Salary Prediction Analysis</h1>
